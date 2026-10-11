@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GrammarHelp</title>
+  <meta name="description" content="A free, privacy-friendly grammar, spelling and style checker that runs in your browser.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✍️</text></svg>">
+  <link rel="stylesheet" href="src/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="logo" aria-hidden="true">✍️</span>
+      <h1>GrammarHelp</h1>
+      <span class="tag">free &amp; private</span>
+    </div>
+    <div class="toolbar">
+      <label class="toggle" title="Sends your text to the free LanguageTool API for hundreds of extra grammar rules and a full spell-checker.">
+        <input type="checkbox" id="lt-toggle">
+        <span>Deep check <small>(LanguageTool)</small></span>
+      </label>
+      <select id="lt-language" aria-label="Language for deep check">
+        <option value="auto">Auto</option>
+        <option value="en-US">English (US)</option>
+        <option value="en-GB">English (UK)</option>
+        <option value="en-CA">English (CA)</option>
+        <option value="en-AU">English (AU)</option>
+        <option value="de-DE">Deutsch</option>
+        <option value="fr">Français</option>
+        <option value="es">Español</option>
+        <option value="pt-PT">Português</option>
+        <option value="nl">Nederlands</option>
+      </select>
+      <button id="copy-btn" type="button">Copy</button>
+      <button id="clear-btn" type="button">Clear</button>
+    </div>
+  </header>
+
+  <main class="layout">
+    <section class="editor-pane">
+      <div class="editor" id="editor">
+        <div class="backdrop" id="backdrop" aria-hidden="true"></div>
+        <textarea id="input" spellcheck="false" autocomplete="off"
+          placeholder="Type or paste your text here…"></textarea>
+      </div>
+      <footer class="stats" id="stats"></footer>
+    </section>
+
+    <aside class="sidebar">
+      <div class="score-card">
+        <div class="score" id="score">–</div>
+        <div>
+          <div class="score-label">Writing score</div>
+          <div class="status" id="status">Start typing to check your writing.</div>
+        </div>
+      </div>
+      <div class="filters" id="filters" role="tablist"></div>
+      <ul class="issues" id="issues"></ul>
+      <button id="fix-all-btn" type="button" class="fix-all" hidden>Accept all suggestions</button>
+    </aside>
+  </main>
+
+  <script src="src/checker.js"></script>
+  <script src="src/languagetool.js"></script>
+  <script src="src/app.js"></script>
+</body>
+</html>

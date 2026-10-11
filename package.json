@@ -1,0 +1,11 @@
+{
+  "name": "grammarhelp",
+  "version": "0.1.0",
+  "description": "A free, privacy-friendly grammar and writing checker that runs in your browser.",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "test": "node --test",
+    "start": "npx --yes http-server -c-1 -p 8080 ."
+  }
+}
