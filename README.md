@@ -18,11 +18,18 @@ No account, no subscription, no server, no tracking.
 
 | Category    | Examples |
 |-------------|----------|
-| Spelling    | ~100 common misspellings (`recieve`, `definately`, `teh`, `alot`) |
+| Spelling    | ~100 common misspellings (`recieve`, `definately`, `teh`, `alot`), British spellings in US English |
 | Grammar     | `a`/`an` (with exceptions like *an hour* and *a university*), repeated words, lowercase `i`, sentence capitalization, `could of`, `then`/`than`, `your`/`you're`, `its`/`it's`, `their`/`there`, `to`/`too`, `loose`/`lose` |
 | Punctuation | double spaces, a space before punctuation, a missing space after a comma, `,,` |
-| Style       | wordy phrases (`in order to` → `to`, `due to the fact that` → `because`), `!!!` |
-| Clarity     | passive voice, sentences over 35 words |
+| Style       | wordy phrases (`in order to` → `to`, `making a decision` → `deciding`, `come to an understanding` → `understand`), informal phrasing (`a lot`, `got good at`, `sales rep`, `gonna`), weak intensifiers (`very good` → `excellent`), redundant `currently`, `was` → `served as` for roles, the same word repeated nearby, `!!!` |
+| Clarity     | passive voice, `There are … that` openers, three sentences in a row with the same first word, sentences over 35 words |
+
+US vs UK spelling (`towards` → `toward`, `colour` → `color`) is flagged only when the
+language is set to Auto or English (US).
+
+Many of the style and clarity rules mirror suggestions that Grammarly reserves for
+its paid Premium plan. They were tuned by running a real paragraph through both
+tools; that paragraph is now a regression test in `test/checker.test.js`.
 
 The built-in rules are deliberately conservative to avoid false alarms. For
 subject–verb agreement, complex grammar and a complete dictionary, turn on

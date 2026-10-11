@@ -108,3 +108,62 @@ test('stats', () => {
   assert.ok(s.readability > 80);
   assert.equal(stats('').readability, null);
 });
+
+test('premium-style: wordy verb phrases keep tense', () => {
+  assert.equal(fixAll('Learn before making a decision.'), 'Learn before deciding.');
+  assert.equal(fixAll('She made a decision.'), 'She decided.');
+  assert.equal(fixAll('We have reached a conclusion.'), 'We have concluded.');
+  assert.equal(fixAll('Help people come to more of an understanding.'), 'Help people better understand.');
+  assert.equal(fixAll('They came to an understanding.'), 'They understood.');
+});
+
+test('premium-style: informal phrasing', () => {
+  assert.equal(fixAll('I got good at sales.'), 'I became skilled at sales.');
+  assert.equal(fixAll('I got top three in the state.'), 'I placed in the top three in the state.');
+  assert.equal(fixAll('I was a sales rep.'), 'I was a sales representative.');
+  assert.equal(fixAll('We learned a lot of things.'), 'We learned many things.');
+  assert.equal(fixAll('My dad was a state representative.'), 'My dad served as a state representative.');
+});
+
+test('premium-style: weak intensifiers', () => {
+  assert.equal(fixAll('It was very good.'), 'It was excellent.');
+  assert.deepEqual(rules('It was very blue.'), []);
+});
+
+test('premium-style: US spelling depends on dialect', () => {
+  assert.equal(fixAll('We moved towards the colour.'), 'We moved toward the color.');
+  assert.deepEqual(check('We moved towards the colour.', { dialect: 'en-GB' }), []);
+});
+
+test('premium-style: redundant "currently" with present progressive', () => {
+  assert.equal(fixAll("Currently, I'm trying to pivot."), "I'm trying to pivot.");
+  assert.equal(fixAll('She is currently working here.'), 'She is working here.');
+  assert.deepEqual(rules('I currently work here.'), []);
+});
+
+test('premium-style: expletive constructions', () => {
+  assert.equal(fixAll('There are so many stories that need telling.'), 'So many stories need telling.');
+  assert.deepEqual(rules('There are reasons that I left.'), []);
+});
+
+test('premium-style: repeated words nearby and sentence openings', () => {
+  assert.ok(rules('I love running. I love swimming.').includes('REPEATED_NEARBY'));
+  assert.ok(!rules('I love running. I would love to swim.').includes('REPEATED_NEARBY'));
+  assert.ok(rules('I ran. I swam. I biked.').includes('REPETITIVE_OPENING'));
+});
+
+test('regression: personal statement compared against Grammarly', () => {
+  const text = 'Growing up, my dad was a state representative for Utah. He taught me to see both sides ' +
+    'and learn before making a decision; I learned a lot about politics. In 2024, I was a summer sales rep ' +
+    "in Southern California, where I got good at meeting people. Currently, I'm trying to pivot towards news. " +
+    "I'd help people come to more of an understanding. There are so many stories that need to be told.";
+  const found = new Set(rules(text));
+  for (const rule of ['ENGAGING_VERB', 'WORDY_VERB', 'INFORMAL', 'REDUNDANT_TIME', 'US_SPELLING', 'EXPLETIVE', 'PASSIVE_VOICE']) {
+    assert.ok(found.has(rule), `expected ${rule}`);
+  }
+  assert.equal(fixAll(text),
+    'Growing up, my dad served as a state representative for Utah. He taught me to see both sides ' +
+    'and learn before deciding; I learned a great deal about politics. In 2024, I was a summer sales representative ' +
+    "in Southern California, where I became skilled at meeting people. I'm trying to pivot toward news. " +
+    "I'd help people better understand. So many stories need to be told.");
+});

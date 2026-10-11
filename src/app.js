@@ -96,7 +96,7 @@
     const text = input.value;
     state.ltIssues = rebaseIssues(state.ltIssues, state.lastText, text);
     state.lastText = text;
-    state.localIssues = check(text);
+    state.localIssues = check(text, { dialect: ltLanguage.value });
     merge();
   }
 
@@ -371,6 +371,7 @@
   ltLanguage.addEventListener('change', () => {
     save(STORAGE.lang, ltLanguage.value);
     state.ltIssues = [];
+    runLocal();
     runLanguageTool();
   });
 

@@ -4,7 +4,7 @@
  * A dependency-free, rule-based grammar/spelling/style checker that runs
  * entirely in the browser (or in Node for tests). Nothing leaves the device.
  *
- * check(text) -> Issue[]
+ * check(text, { dialect: 'en-US' | 'en-GB' | ... }) -> Issue[]
  *   Issue = {
  *     offset, length,        // range in `text`
  *     message,               // human-readable explanation
@@ -465,13 +465,272 @@
   }
 
   // ---------------------------------------------------------------------------
+  // Premium-style suggestions (conciseness, word choice, delivery)
+  // ---------------------------------------------------------------------------
+
+  // Verb forms: [base, 3rd person, past, -ing, past participle].
+  const VERB_PHRASES = [
+    { verb: ['make', 'makes', 'made', 'making', 'made'], rest: 'a\\s+decision',
+      to: [['decide', 'decides', 'decided', 'deciding', 'decided']] },
+    { verb: ['come', 'comes', 'came', 'coming', 'come'],
+      rest: 'to\\s+(more\\s+of\\s+an|a\\s+better|an)\\s+understanding(?:\\s+of)?',
+      to: [['understand', 'understands', 'understood', 'understanding', 'understood']],
+      better: (m) => !/^an$/i.test(m[2]) },
+    { verb: ['take', 'takes', 'took', 'taking', 'taken'], rest: 'into\\s+consideration',
+      to: [['consider', 'considers', 'considered', 'considering', 'considered']] },
+    { verb: ['give', 'gives', 'gave', 'giving', 'given'], rest: 'an\\s+explanation(?:\\s+(?:of|for))?',
+      to: [['explain', 'explains', 'explained', 'explaining', 'explained']] },
+    { verb: ['reach', 'reaches', 'reached', 'reaching', 'reached'], rest: 'a\\s+conclusion',
+      to: [['conclude', 'concludes', 'concluded', 'concluding', 'concluded']] },
+    { verb: ['make', 'makes', 'made', 'making', 'made'], rest: 'an\\s+attempt',
+      to: [['try', 'tries', 'tried', 'trying', 'tried']] },
+    { verb: ['conduct', 'conducts', 'conducted', 'conducting', 'conducted'],
+      rest: 'an\\s+investigation(?:\\s+(?:into|of))?',
+      to: [['investigate', 'investigates', 'investigated', 'investigating', 'investigated']] },
+    { verb: ['have', 'has', 'had', 'having', 'had'], rest: 'a\\s+discussion(?:\\s+(?:about|of))?',
+      to: [['discuss', 'discusses', 'discussed', 'discussing', 'discussed']] },
+    { verb: ['provide', 'provides', 'provided', 'providing', 'provided'], rest: 'assistance(?:\\s+to)?',
+      to: [['help', 'helps', 'helped', 'helping', 'helped']] },
+    { verb: ['get', 'gets', 'got', 'getting', 'gotten'], rest: 'good\\s+at', category: 'style',
+      rule: 'INFORMAL', message: '"Get good at" is informal. Try a more precise phrase.',
+      to: [['become', 'becomes', 'became', 'becoming', 'become'], ['excel', 'excels', 'excelled', 'excelling', 'excelled']],
+      suffix: [' skilled at', ' at'] },
+  ];
+
+  function verbPhrases(text, out) {
+    for (const vp of VERB_PHRASES) {
+      const re = new RegExp('\\b(' + vp.verb.join('|') + ')\\s+(?:' + vp.rest + ')\\b', 'gi');
+      let m;
+      while ((m = re.exec(text))) {
+        const surface = m[1].toLowerCase();
+        const afterHave = /\b(have|has|had|having)\s+$/i.test(text.slice(Math.max(0, m.index - 10), m.index));
+        let idx = afterHave ? 4 : vp.verb.indexOf(surface);
+        if (idx < 0) idx = 0;
+        const prefix = vp.better && vp.better(m) ? 'better ' : '';
+        const replacements = vp.to.map((forms, i) =>
+          matchCase(m[0], prefix + forms[idx] + ((vp.suffix && vp.suffix[i]) || '')));
+        out.push({
+          offset: m.index, length: m[0].length,
+          message: vp.message || `"${m[0]}" is wordy. A single verb is more direct.`,
+          category: vp.category || 'style', rule: vp.rule || 'WORDY_VERB',
+          replacements,
+        });
+      }
+    }
+  }
+
+  const INFORMAL = [
+    [/\ba\s+lot\s+of\b/gi, ['many', 'much', 'plenty of'], '"A lot of" is informal. Consider a more precise word.'],
+    [/\ba\s+lot\b(?!\s+of\b)/gi, ['a great deal', 'much'], '"A lot" is informal. Consider a more precise phrase.'],
+    [/\bgonna\b/gi, ['going to'], '"Gonna" is informal.'],
+    [/\bwanna\b/gi, ['want to'], '"Wanna" is informal.'],
+    [/\bgotta\b/gi, ['have to'], '"Gotta" is informal.'],
+    [/\b(?:kinda|sorta)\b/gi, ['somewhat', 'rather'], 'This is informal. Consider "somewhat".'],
+    [/\bgot\s+(?=top\s+\w+)/gi, ['placed in the '], '"Got top …" is informal. Try "placed in the top …".'],
+    [/\b(?:was|were)(?=\s+(?:a|an|the)\s+(?:[\w-]+\s+){0,2}?(?:representative|senator|mayor|governor|president|member|manager|captain|director|chair|volunteer|intern|editor|coach|leader)\b)/gi,
+      ['served as'], 'For a role or position, "served as" is more engaging than "was".', 'ENGAGING_VERB'],
+    [/\b(?:sales|state|customer|service|support|class|student)\s+(reps?)\b/gi, null, '"Rep" is informal. Spell it out.'],
+    [/\bwhether\s+or\s+not\b/gi, ['whether'], '"Or not" is usually unnecessary after "whether".', 'WORDY'],
+    [/\bon\s+a\s+daily\s+basis\b/gi, ['daily'], 'Wordy phrase.', 'WORDY'],
+    [/\bat\s+all\s+times\b/gi, ['always'], 'Wordy phrase.', 'WORDY'],
+    [/\buntil\s+such\s+time\s+as\b/gi, ['until'], 'Wordy phrase.', 'WORDY'],
+    [/\bso\s+as\s+to\b/gi, ['to'], 'Wordy phrase.', 'WORDY'],
+    [/\bin\s+close\s+proximity\s+to\b/gi, ['near'], 'Wordy phrase.', 'WORDY'],
+    [/\b(?:is|are)\s+in\s+need\s+of\b/gi, null, 'Wordy phrase.', 'WORDY'],
+  ];
+
+  function informal(text, out) {
+    for (const [re, subs, message, rule] of INFORMAL) {
+      re.lastIndex = 0;
+      let m;
+      while ((m = re.exec(text))) {
+        let replacements = subs;
+        let offset = m.index;
+        let length = m[0].length;
+        if (rule === 'WORDY' && !replacements) {
+          replacements = [/^is/i.test(m[0]) ? 'needs' : 'need'];
+        } else if (!replacements) {
+          // "sales rep(s)": only the abbreviation itself is replaced.
+          offset = m.index + m[0].length - m[1].length;
+          length = m[1].length;
+          replacements = [/s$/i.test(m[1]) ? 'representatives' : 'representative'];
+        }
+        const original = text.substr(offset, length);
+        out.push({
+          offset, length, message,
+          category: 'style', rule: rule || 'INFORMAL',
+          replacements: replacements.map((r) => matchCase(original, r)),
+        });
+      }
+    }
+  }
+
+  const STRONGER_WORDS = {
+    good: ['excellent', 'great'], bad: ['terrible', 'awful'], big: ['huge', 'enormous'],
+    large: ['enormous', 'massive'], small: ['tiny', 'minuscule'], important: ['crucial', 'essential'],
+    happy: ['delighted', 'thrilled'], tired: ['exhausted', 'drained'], hungry: ['starving', 'famished'],
+    scared: ['terrified', 'petrified'], angry: ['furious', 'livid'], hard: ['difficult', 'grueling'],
+    difficult: ['challenging', 'grueling'], easy: ['effortless', 'simple'], fast: ['rapid', 'swift'],
+    smart: ['brilliant', 'intelligent'], beautiful: ['gorgeous', 'stunning'],
+    interesting: ['fascinating', 'compelling'], cold: ['freezing', 'frigid'], hot: ['scorching', 'sweltering'],
+    excited: ['thrilled', 'eager'], loud: ['deafening', 'thunderous'], clean: ['spotless', 'immaculate'],
+    dirty: ['filthy', 'grimy'], old: ['ancient', 'aged'], sad: ['heartbroken', 'sorrowful'],
+    funny: ['hilarious', 'hysterical'], bright: ['brilliant', 'dazzling'], quiet: ['silent', 'hushed'],
+    sure: ['certain', 'confident'], different: ['distinct', 'unusual'], clear: ['obvious', 'evident'],
+  };
+
+  function intensifiers(text, out) {
+    const re = /\b(very|really|extremely|super)\s+([a-z]+)\b/gi;
+    let m;
+    while ((m = re.exec(text))) {
+      const subs = STRONGER_WORDS[m[2].toLowerCase()];
+      if (!subs) continue;
+      out.push({
+        offset: m.index, length: m[0].length,
+        message: `"${m[0]}" is weak. A stronger single word is more vivid.`,
+        category: 'style', rule: 'WEAK_INTENSIFIER',
+        replacements: subs.map((s) => matchCase(m[0], s)),
+      });
+    }
+  }
+
+  // British spellings flagged when writing American English.
+  const US_SPELLINGS = {
+    towards: 'toward', afterwards: 'afterward', backwards: 'backward', upwards: 'upward',
+    downwards: 'downward', amongst: 'among', whilst: 'while', colour: 'color',
+    colours: 'colors', favourite: 'favorite', favourites: 'favorites', honour: 'honor',
+    behaviour: 'behavior', neighbour: 'neighbor', neighbours: 'neighbors', humour: 'humor',
+    flavour: 'flavor', labour: 'labor', organise: 'organize', organised: 'organized',
+    realise: 'realize', realised: 'realized', recognise: 'recognize', recognised: 'recognized',
+    apologise: 'apologize', analyse: 'analyze', centre: 'center', theatre: 'theater',
+    travelled: 'traveled', travelling: 'traveling', cancelled: 'canceled', defence: 'defense',
+    licence: 'license', grey: 'gray', programme: 'program', catalogue: 'catalog',
+  };
+
+  function usSpelling(text, out, opts) {
+    const dialect = (opts && opts.dialect) || 'en-US';
+    if (dialect !== 'en-US' && dialect !== 'auto') return;
+    const re = /\b[A-Za-z]+\b/g;
+    let m;
+    while ((m = re.exec(text))) {
+      const us = US_SPELLINGS[m[0].toLowerCase()];
+      if (!us) continue;
+      out.push({
+        offset: m.index, length: m[0].length,
+        message: `In American English, "${us}" is preferred over "${m[0].toLowerCase()}".`,
+        category: 'spelling', rule: 'US_SPELLING',
+        replacements: [matchCase(m[0], us)],
+      });
+    }
+  }
+
+  // "Currently, I'm trying…" — the present progressive already says "now".
+  function redundantTimeWords(text, out) {
+    const sentenceRe = /[^.!?\n]+[.!?]*/g;
+    let s;
+    while ((s = sentenceRe.exec(text))) {
+      const sentence = s[0];
+      if (!/(?:\b(?:am|is|are)|['’](?:m|re|s))\s+(?:(?:currently|presently)\s+)?\w+ing\b/i.test(sentence)) continue;
+      const m = /\b(currently|presently|right now)\b,?\s*/i.exec(sentence);
+      if (!m) continue;
+      const offset = s.index + m.index;
+      const atStart = sentence.slice(0, m.index).trim() === '';
+      const next = sentence[m.index + m[0].length];
+      out.push(atStart && next
+        ? {
+          offset, length: m[0].length + 1,
+          message: `"${m[1]}" is unnecessary here; the verb already shows it's happening now.`,
+          category: 'style', rule: 'REDUNDANT_TIME',
+          replacements: [next.toUpperCase()],
+        }
+        : {
+          offset, length: m[0].length,
+          message: `"${m[1]}" is unnecessary here; the verb already shows it's happening now.`,
+          category: 'style', rule: 'REDUNDANT_TIME',
+          replacements: [''],
+        });
+    }
+  }
+
+  // "There are many stories that need…" -> "Many stories need…"
+  function expletives(text, out) {
+    const re = /\b(there)\s+(?:is|are|was|were)\s+((?:[\w'-]+\s+){0,5}?[\w'-]+)\s+(?:that|who|which)\s+(?!(?:I|you|we|they|he|she|it|the|a|an|my|your|our|their|his|her|this|these|those)\b)(?=[a-z])/gi;
+    let m;
+    while ((m = re.exec(text))) {
+      const np = m[2];
+      out.push({
+        offset: m.index, length: m[0].trimEnd().length,
+        message: 'Sentences starting with "There is/are … that" are often wordy. Try making the subject lead.',
+        category: 'clarity', rule: 'EXPLETIVE',
+        replacements: [/^T/.test(m[1]) ? np[0].toUpperCase() + np.slice(1) : np],
+      });
+    }
+  }
+
+  // Repeating a word within a short span reads as flat; suggest synonyms.
+  const SYNONYMS = {
+    love: { next: /^\s+\w+ing\b/, subs: ['enjoy', 'relish'] },
+    great: { subs: ['excellent', 'outstanding'] },
+    good: { subs: ['strong', 'solid'] },
+    nice: { subs: ['pleasant', 'lovely'] },
+    amazing: { subs: ['incredible', 'remarkable'] },
+    awesome: { subs: ['impressive', 'fantastic'] },
+    interesting: { subs: ['fascinating', 'intriguing'] },
+    important: { subs: ['essential', 'significant'] },
+  };
+  const REPEAT_WINDOW = 300;
+
+  function overusedWords(text, out) {
+    const last = {};
+    const re = /\b[A-Za-z]+\b/g;
+    let m;
+    while ((m = re.exec(text))) {
+      const w = m[0].toLowerCase();
+      const entry = SYNONYMS[w];
+      if (!entry) continue;
+      const prev = last[w];
+      last[w] = m.index;
+      if (prev == null || m.index - prev > REPEAT_WINDOW) continue;
+      if (entry.next && !entry.next.test(text.slice(m.index + m[0].length, m.index + m[0].length + 30))) continue;
+      out.push({
+        offset: m.index, length: m[0].length,
+        message: `You've used "${w}" more than once nearby. Try a synonym for variety.`,
+        category: 'style', rule: 'REPEATED_NEARBY',
+        replacements: entry.subs.map((s) => matchCase(m[0], s)),
+      });
+    }
+  }
+
+  // Three or more sentences in a row starting with the same word.
+  function sentenceOpenings(text, out) {
+    const re = /(^|[.!?]["')\]]?\s+)([A-Za-z']+)/g;
+    let m;
+    let prevWord = null;
+    let run = 0;
+    while ((m = re.exec(text))) {
+      const word = m[2].toLowerCase();
+      run = word === prevWord ? run + 1 : 1;
+      prevWord = word;
+      if (run >= 3) {
+        out.push({
+          offset: m.index + m[1].length, length: m[2].length,
+          message: `${run} sentences in a row start with "${m[2]}". Try varying your sentence openings.`,
+          category: 'clarity', rule: 'REPETITIVE_OPENING',
+          replacements: [],
+        });
+      }
+    }
+  }
+
+  // ---------------------------------------------------------------------------
   // Public API
   // ---------------------------------------------------------------------------
 
   const RULES = [
-    spelling, confusions, repeatedWords, articles, lowercaseI,
-    sentenceCapitalization, whitespaceAndPunctuation, wordiness,
-    passiveVoice, longSentences,
+    spelling, usSpelling, confusions, repeatedWords, articles, lowercaseI,
+    sentenceCapitalization, whitespaceAndPunctuation, wordiness, verbPhrases,
+    informal, intensifiers, redundantTimeWords, expletives, overusedWords,
+    passiveVoice, sentenceOpenings, longSentences,
   ];
 
   // Lower number wins when two issues overlap.
@@ -481,7 +740,7 @@
     const opts = options || {};
     const disabled = new Set(opts.disabledRules || []);
     let issues = [];
-    for (const rule of RULES) rule(text, issues);
+    for (const rule of RULES) rule(text, issues, opts);
     issues = issues.filter((i) => !disabled.has(i.rule));
     return resolveOverlaps(issues);
   }
