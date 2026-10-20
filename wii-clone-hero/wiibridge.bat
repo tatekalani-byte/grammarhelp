@@ -11,8 +11,8 @@ if not defined PY (
 )
 if not defined PY (
     echo Python 3 is not installed.
-    echo Get it from https://www.python.org/downloads/ and tick
-    echo "Add python.exe to PATH" in the installer, then run this again.
+    echo Get it from https://www.python.org/downloads/ and answer y to
+    echo "Install CPython now?", then run this again.
     pause
     exit /b 1
 )

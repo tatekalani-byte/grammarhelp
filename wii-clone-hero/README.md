@@ -25,8 +25,17 @@ Remote (the Wii Remote's own buttons still work).
 You need a PC with Bluetooth (built in, or a USB Bluetooth adapter) and
 Python 3.9 or newer.
 
-1. **Install Python** from <https://www.python.org/downloads/>. In the
-   installer, tick **"Add python.exe to PATH"**.
+1. **Install Python** from <https://www.python.org/downloads/>. The download
+   is the *Python install manager*, which opens a terminal window and asks a
+   few questions. Type the letter and press Enter:
+   - *Install CPython now?* **y** (this is the one that matters)
+   - *Add commands directory to your PATH now?* **y**
+   - *Update setting now?* (long paths) **n** is fine
+   - *Open Settings now… App execution aliases?* **y**, then switch on
+     *Python (default)* and *Python install manager*
+
+   When it says *Configuration checks completed*, close it. (If you used
+   the older `.exe` installer instead, tick **"Add python.exe to PATH"**.)
 2. **Double-click `wiibridge.bat`.** The first time, it installs what it needs.
    This includes the **ViGEmBus** driver, which creates the virtual Xbox
    controllers: when its installer pops up, accept the licence and click
