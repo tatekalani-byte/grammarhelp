@@ -1,0 +1,14 @@
+# Let the logged-in user talk to Wii Remotes / Wii U Pro Controllers and create
+# virtual controllers, so wiibridge doesn't need sudo.
+#
+#   sudo cp linux/70-wii-clone-hero.rules /etc/udev/rules.d/
+#   sudo udevadm control --reload-rules && sudo udevadm trigger
+#
+# Then reconnect the controllers.
+
+# Wii Remote (057e:0306), Wii Remote Plus and Wii U Pro Controller (057e:0330)
+KERNEL=="hidraw*", KERNELS=="*057E:0306*", MODE="0660", TAG+="uaccess"
+KERNEL=="hidraw*", KERNELS=="*057E:0330*", MODE="0660", TAG+="uaccess"
+
+# Virtual controllers
+KERNEL=="uinput", SUBSYSTEM=="misc", MODE="0660", TAG+="uaccess", OPTIONS+="static_node=uinput"
