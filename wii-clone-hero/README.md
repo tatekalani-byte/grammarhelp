@@ -23,7 +23,9 @@ Remote (the Wii Remote's own buttons still work).
 ## Windows setup
 
 You need a PC with Bluetooth (built in, or a USB Bluetooth adapter) and
-Python 3.9 or newer.
+Python 3.10 to 3.14. One of the parts it uses has no
+ready-made package for Python 3.15 yet; if that's your default, `wiibridge.bat`
+installs Python 3.14 next to it on the first run.
 
 1. **Install Python** from <https://www.python.org/downloads/>. The download
    is the *Python install manager*, which opens a terminal window and asks a
