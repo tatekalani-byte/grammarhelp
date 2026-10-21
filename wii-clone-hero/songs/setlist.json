@@ -1,0 +1,2954 @@
+{
+ "playlist": "This is what I sound like",
+ "source": "https://open.spotify.com/playlist/2SBmtSpPEXQ11fF8dTnUuF",
+ "checked": "2026-10-21",
+ "songs": [
+  {
+   "n": 1,
+   "artist": "Pavement",
+   "title": "Cut Your Hair",
+   "official": true,
+   "md5": "89be474cbc910efc6930d2e6fcf37ede"
+  },
+  {
+   "n": 2,
+   "artist": "Peach Pit",
+   "title": "Shampoo Bottles",
+   "official": false,
+   "md5": "27c26a9168f6c83de3899378263a4579"
+  },
+  {
+   "n": 3,
+   "artist": "Sublime",
+   "title": "What I Got",
+   "official": true,
+   "md5": "bb7bab46a4384f90dcd1bb59a1b6d8e8"
+  },
+  {
+   "n": 4,
+   "artist": "The Presidents Of The United States Of America",
+   "title": "Lump",
+   "official": true,
+   "md5": "c03ad46ad5b44c6cad4c238b18b7917a"
+  },
+  {
+   "n": 5,
+   "artist": "Operation Ivy",
+   "title": "Sound System",
+   "official": false,
+   "md5": "13b0269f078bd6888492a55f252e2ba1"
+  },
+  {
+   "n": 6,
+   "artist": "Kendrick Lamar",
+   "title": "Alright",
+   "official": false,
+   "md5": "dcd3fe1605231816d6ed5fb76b82bb53"
+  },
+  {
+   "n": 7,
+   "artist": "Beck",
+   "title": "Loser",
+   "official": false,
+   "md5": "3aa9bce43268ee253f285d93e74e6990"
+  },
+  {
+   "n": 8,
+   "artist": "Boston",
+   "title": "More Than a Feeling",
+   "official": true,
+   "md5": "37bf72279dc754e4955d3aa368f46020"
+  },
+  {
+   "n": 9,
+   "artist": "Electric Light Orchestra",
+   "title": "Don't Bring Me Down",
+   "official": false,
+   "md5": "b07595c023b35413a454c681434527b0"
+  },
+  {
+   "n": 10,
+   "artist": "Her's",
+   "title": "What Once Was",
+   "official": false,
+   "md5": "672bfc6a97a6294c9fe176580bf09b2a"
+  },
+  {
+   "n": 11,
+   "artist": "Clairo",
+   "title": "Bags",
+   "official": false,
+   "md5": "4ae1591c71bf28406d721ebeb45bfd20"
+  },
+  {
+   "n": 12,
+   "artist": "The Backseat Lovers",
+   "title": "Maple Syrup",
+   "official": false,
+   "md5": "ddd87a20bc3645949104169b5b2e6a1b"
+  },
+  {
+   "n": 13,
+   "artist": "Peach Pit",
+   "title": "Alrighty Aphrodite",
+   "official": false,
+   "md5": "d1c2d332815f68971d1ed571f8fdf176"
+  },
+  {
+   "n": 14,
+   "artist": "The Kinks",
+   "title": "Lola",
+   "official": false,
+   "md5": "151a879d70e4b8dc6cae70a341df3ccb"
+  },
+  {
+   "n": 15,
+   "artist": "MF DOOM, Mr. Fantastik",
+   "title": "Rapp Snitch Knishes",
+   "official": false,
+   "md5": "d3bf16c4b8095ea574aeafeca3fb5ea3"
+  },
+  {
+   "n": 16,
+   "artist": "Estelle, Kanye West",
+   "title": "American Boy",
+   "official": false,
+   "md5": "e1b8c2f335f8b8b9fc9e57542a2ef2d6"
+  },
+  {
+   "n": 17,
+   "artist": "Frank Ocean",
+   "title": "Lost",
+   "official": false,
+   "md5": "fdb073f1112006e4f478ffe033e629c5"
+  },
+  {
+   "n": 18,
+   "artist": "Operation Ivy",
+   "title": "Bad Town",
+   "official": false,
+   "md5": "9c2b7b6f3e6b89687ec15a8212882624"
+  },
+  {
+   "n": 19,
+   "artist": "Dominic Fike",
+   "title": "Why",
+   "official": false,
+   "md5": "274dde521bfefff8e49a6a4a0daf8bdd"
+  },
+  {
+   "n": 20,
+   "artist": "Pink Floyd",
+   "title": "Shine On You Crazy Diamond (Pts. 1-5)",
+   "official": false,
+   "md5": "89b2d2e6c6ebb5f86f3ecbf031f0e13e"
+  },
+  {
+   "n": 21,
+   "artist": "Kanye West, Mr Hudson",
+   "title": "Paranoid",
+   "official": false,
+   "md5": "94e877e8eda5795f75db149f578914f7"
+  },
+  {
+   "n": 22,
+   "artist": "Kendrick Lamar, Drake",
+   "title": "Poetic Justice",
+   "official": false,
+   "md5": "7e17b0d5dec83b0abed25368d63d44c8"
+  },
+  {
+   "n": 23,
+   "artist": "Kendrick Lamar",
+   "title": "i",
+   "official": false,
+   "md5": "75d18a9ba6c6e2ac1e202f2c182feb49"
+  },
+  {
+   "n": 24,
+   "artist": "Tyler, The Creator",
+   "title": "SAFARI",
+   "official": false,
+   "md5": "634c0abafee9dbebda542337208bbeda"
+  },
+  {
+   "n": 25,
+   "artist": "Dr. Dog",
+   "title": "Where'd All the Time Go?",
+   "official": false,
+   "md5": "66ae3ac6a5a4cac3a7284a4a761546f3"
+  },
+  {
+   "n": 26,
+   "artist": "Her's",
+   "title": "Marcel",
+   "official": false,
+   "md5": "2b6276f11294f97854a6a38239767975"
+  },
+  {
+   "n": 27,
+   "artist": "Pavement",
+   "title": "Harness Your Hopes",
+   "official": false,
+   "md5": "19fce90aef702a022c126555b5f7ed5b"
+  },
+  {
+   "n": 28,
+   "artist": "Beach House",
+   "title": "Space Song",
+   "official": false,
+   "md5": "3df198e23713d617c60e091f7997a5db"
+  },
+  {
+   "n": 29,
+   "artist": "Hotel Ugly",
+   "title": "Shut up My Moms Calling",
+   "official": false,
+   "md5": "edd97f7d4580999e082e8092fac9e658"
+  },
+  {
+   "n": 30,
+   "artist": "Outkast",
+   "title": "Roses",
+   "official": false,
+   "md5": "bbeb59fe47efbb8ac9c07e91ae37c935"
+  },
+  {
+   "n": 31,
+   "artist": "Outkast",
+   "title": "Hey Ya!",
+   "official": false,
+   "md5": "0342f03b965c10c52ffa634691567d79"
+  },
+  {
+   "n": 32,
+   "artist": "Outkast",
+   "title": "B.O.B. - Bombs Over Baghdad",
+   "official": false,
+   "md5": "032bba1361115e622f13ec3b50e1f530"
+  },
+  {
+   "n": 33,
+   "artist": "Operation Ivy",
+   "title": "Take Warning",
+   "official": false,
+   "md5": "854dab8133eb7a4f7f12098624afb2bf"
+  },
+  {
+   "n": 34,
+   "artist": "Peach Pit",
+   "title": "Vickie",
+   "official": false,
+   "md5": "7ec9968b43ec0c7f749eb0a8bcc9d9b7"
+  },
+  {
+   "n": 35,
+   "artist": "Tyler, The Creator",
+   "title": "GONE, GONE / THANK YOU",
+   "official": false,
+   "md5": "8ee8ad599a84f46e205fd6a15f0536a6"
+  },
+  {
+   "n": 36,
+   "artist": "Sweet",
+   "title": "Fox On The Run",
+   "official": false,
+   "md5": "f4ffbbfe7ed73382ff1d28a9e6bdad9f"
+  },
+  {
+   "n": 37,
+   "artist": "Steve Miller Band",
+   "title": "Jet Airliner",
+   "official": true,
+   "md5": "14fad4db09efa9ee664457536fd6fa0e"
+  },
+  {
+   "n": 38,
+   "artist": "The Beatles",
+   "title": "I Want You (She's So Heavy)",
+   "official": true,
+   "md5": "4ef53e60856422613bb2193389513605"
+  },
+  {
+   "n": 39,
+   "artist": "Pink Floyd",
+   "title": "Wish You Were Here",
+   "official": false,
+   "md5": "c09dd0bf6daa7d63697947da253692e2"
+  },
+  {
+   "n": 40,
+   "artist": "Pink Floyd",
+   "title": "Another Brick in the Wall, Pt. 2",
+   "official": false,
+   "md5": "32805d15c09267300b561b3562763d93"
+  },
+  {
+   "n": 41,
+   "artist": "Pink Floyd",
+   "title": "Money",
+   "official": false,
+   "md5": "2daf55654f55dc95005c7d9013a6924c"
+  },
+  {
+   "n": 42,
+   "artist": "Lynyrd Skynyrd",
+   "title": "Free Bird",
+   "official": true,
+   "md5": "39fb39fb45c885ab718a1a9380a5635a"
+  },
+  {
+   "n": 43,
+   "artist": "The Strokes",
+   "title": "Is This It",
+   "official": false,
+   "md5": "a37e8f8fcd8752635599986cab9831ea"
+  },
+  {
+   "n": 44,
+   "artist": "Chumbawamba",
+   "title": "Tubthumping",
+   "official": true,
+   "md5": "4cfedca667c5bcebb65f8e56411ce64f"
+  },
+  {
+   "n": 45,
+   "artist": "Sublime",
+   "title": "Santeria",
+   "official": true,
+   "md5": "00426b3390171619d22df801005e8f5e"
+  },
+  {
+   "n": 46,
+   "artist": "Queen",
+   "title": "Fat Bottomed Girls",
+   "official": true,
+   "md5": "f35f49e1ff4a8ca5e48f25523745d0af"
+  },
+  {
+   "n": 47,
+   "artist": "Aerosmith",
+   "title": "Sweet Emotion",
+   "official": true,
+   "md5": "695e36f0d57eefd2f1d5c2a12bc5060b"
+  },
+  {
+   "n": 48,
+   "artist": "Aliotta Haynes Jeremiah",
+   "title": "Lake Shore Drive",
+   "official": false,
+   "md5": "8b7c87ed6c2bb76af4f92dd226bfc6c4"
+  },
+  {
+   "n": 49,
+   "artist": "The White Stripes",
+   "title": "We're Going to Be Friends",
+   "official": false,
+   "md5": "0e4c541fcd31e12e2b695e910e509aef"
+  },
+  {
+   "n": 50,
+   "artist": "The Strokes",
+   "title": "Last Nite",
+   "official": false,
+   "md5": "e1133f0a85e6a94eaa475e98423844d6"
+  },
+  {
+   "n": 51,
+   "artist": "Her's",
+   "title": "Harvey",
+   "official": false,
+   "md5": "19dfa153f2848f7a9c50a5208b44a553"
+  },
+  {
+   "n": 52,
+   "artist": "SEATBELTS",
+   "title": "Too Good Too Bad",
+   "official": false,
+   "md5": "9901434314b57b1245044d307663c6d1"
+  },
+  {
+   "n": 53,
+   "artist": "SEATBELTS",
+   "title": "Tank!",
+   "official": false,
+   "md5": "37f1ef6938898e63065475fe002e5758"
+  },
+  {
+   "n": 54,
+   "artist": "The Beatles",
+   "title": "Octopus's Garden",
+   "official": true,
+   "md5": "c155454a5bb8aaa1ca47ddfeedce61eb"
+  },
+  {
+   "n": 55,
+   "artist": "The Beach Boys",
+   "title": "Surfin' Safari",
+   "official": false,
+   "md5": "6dddf2a37d7d1bf952cb8b73f9443458"
+  },
+  {
+   "n": 56,
+   "artist": "Billy Joel",
+   "title": "The River of Dreams",
+   "official": false,
+   "md5": "d1270bd4d57de60f681edb2c0108b62c"
+  },
+  {
+   "n": 57,
+   "artist": "The Beach Boys",
+   "title": "Barbara Ann",
+   "official": false,
+   "md5": "98b2bce559868140956556ed61dcfa33"
+  },
+  {
+   "n": 58,
+   "artist": "Buffalo Springfield",
+   "title": "For What It's Worth",
+   "official": true,
+   "md5": "b02b3d7fefbb032592e97c1fd306f994"
+  },
+  {
+   "n": 59,
+   "artist": "Billy Joel",
+   "title": "Scenes from an Italian Restaurant",
+   "official": true,
+   "md5": "a9c09fb79b60ec0d2226af42f1113511"
+  },
+  {
+   "n": 60,
+   "artist": "The Strokes",
+   "title": "The Adults Are Talking",
+   "official": false,
+   "md5": "b26e049024202fba08b8c10d2cb38212"
+  },
+  {
+   "n": 61,
+   "artist": "Joy Again",
+   "title": "Looking Out for You",
+   "official": false,
+   "md5": "3860b5723591d2d58abb31cb59121241"
+  },
+  {
+   "n": 62,
+   "artist": "Glen Campbell",
+   "title": "Southern Nights",
+   "official": false,
+   "md5": "b68a110372cc3347bce6fd19878c1c2d"
+  },
+  {
+   "n": 63,
+   "artist": "Peach Pit",
+   "title": "Sweet FA",
+   "official": false,
+   "md5": "289059dbf4c08907ef052a4b1266ac17"
+  },
+  {
+   "n": 64,
+   "artist": "Peach Pit",
+   "title": "Seventeen",
+   "official": false,
+   "md5": "5fa0c1f36619aab7921341cdaac98a97"
+  },
+  {
+   "n": 65,
+   "artist": "Together Pangea",
+   "title": "Friend of Nothing",
+   "official": false,
+   "md5": "476f29f6e859dce235c7ebba821408d0"
+  },
+  {
+   "n": 66,
+   "artist": "Djo",
+   "title": "End of Beginning",
+   "official": false,
+   "md5": "97affc870f4a5e787ab3dd58bb8890a7"
+  },
+  {
+   "n": 67,
+   "artist": "The Red Pears",
+   "title": "Daylight/Moonlight",
+   "official": false,
+   "md5": "bd6293ff152abf9f5711ce0816b1a4a5"
+  },
+  {
+   "n": 68,
+   "artist": "Tom Petty and the Heartbreakers",
+   "title": "Mary Jane's Last Dance",
+   "official": true,
+   "md5": "d92578fac297ab22bb165f2752238942"
+  },
+  {
+   "n": 69,
+   "artist": "Billy Joel",
+   "title": "Piano Man",
+   "official": true,
+   "md5": "b40e0de1c8a2b911d61a8ea01f683c83"
+  },
+  {
+   "n": 70,
+   "artist": "The Beatles",
+   "title": "Norwegian Wood (This Bird Has Flown)",
+   "official": true,
+   "md5": "644a1efcb6184bbc88ab4b3b06befcd0"
+  },
+  {
+   "n": 71,
+   "artist": "WILLOW",
+   "title": "Wait a Minute!",
+   "official": false,
+   "md5": "2579aa076fbcd80cb22346b74dcb4b47"
+  },
+  {
+   "n": 72,
+   "artist": "Styx",
+   "title": "Too Much Time On My Hands",
+   "official": true,
+   "md5": "bd2def324254b3a2d5a654407ee3f939"
+  },
+  {
+   "n": 73,
+   "artist": "Surf Curse, Travis Barker",
+   "title": "Freaks",
+   "official": false,
+   "md5": "1e9798e29b339b1a979566666103e53d"
+  },
+  {
+   "n": 74,
+   "artist": "Rex Orange County",
+   "title": "Television / So Far So Good",
+   "official": false,
+   "md5": "3fbd01875c8467afb5dc1f8f8b50515b"
+  },
+  {
+   "n": 75,
+   "artist": "Beastie Boys",
+   "title": "No Sleep Till Brooklyn",
+   "official": true,
+   "md5": "0ac165a28f4e9a32d44104f25f3eb2d3"
+  },
+  {
+   "n": 76,
+   "artist": "Prince",
+   "title": "Raspberry Beret",
+   "official": false,
+   "md5": "e5267019ba09d7eafd2be36425cb5f62"
+  },
+  {
+   "n": 77,
+   "artist": "Sublime",
+   "title": "Wrong Way",
+   "official": true,
+   "md5": "d8eddecbadfa4248fb0b68bcfa7ed82d"
+  },
+  {
+   "n": 78,
+   "artist": "Eagles Of Death Metal",
+   "title": "Wannabe In L.A",
+   "official": true,
+   "md5": "49e184c19952291b4633601311dade29"
+  },
+  {
+   "n": 79,
+   "artist": "Paul McCartney, Wings",
+   "title": "Band On The Run",
+   "official": true,
+   "md5": "6d7d923a73ac72d2c6e28b80744ccbbd"
+  },
+  {
+   "n": 80,
+   "artist": "Prince",
+   "title": "Purple Rain",
+   "official": false,
+   "md5": "61456c7c4cae764ee62d4b48c6312578"
+  },
+  {
+   "n": 81,
+   "artist": "The Beatles",
+   "title": "Back In The U.S.S.R.",
+   "official": true,
+   "md5": "ad3651b1af17bb87ff1bc4ad734a5541"
+  },
+  {
+   "n": 82,
+   "artist": "Jet",
+   "title": "Are You Gonna Be My Girl",
+   "official": true,
+   "md5": "15f657d9d9e265459bf0caea2296e2a7"
+  },
+  {
+   "n": 83,
+   "artist": "Red Hot Chili Peppers",
+   "title": "Scar Tissue",
+   "official": true,
+   "md5": "ba704acaf51dd4d24c804c213524acd6"
+  },
+  {
+   "n": 84,
+   "artist": "Travis Scott, Kacy Hill",
+   "title": "90210",
+   "official": false,
+   "md5": "64cc5b7d4922511573d4b344cd140b10"
+  },
+  {
+   "n": 85,
+   "artist": "The White Stripes",
+   "title": "Fell In Love With a Girl",
+   "official": true,
+   "md5": "a943a2a6894333bca460f7be6569b766"
+  },
+  {
+   "n": 86,
+   "artist": "Butthole Surfers",
+   "title": "Pepper",
+   "official": false,
+   "md5": "c67ec484935047bcbc77ead4d9122250"
+  },
+  {
+   "n": 87,
+   "artist": "Violent Femmes",
+   "title": "American Music",
+   "official": true,
+   "md5": "0ba5c4470c85ab0014c5e123e0d8fe7c"
+  },
+  {
+   "n": 88,
+   "artist": "The Strokes",
+   "title": "Someday",
+   "official": false,
+   "md5": "935bbdafc95bdb5d129e190c9005b526"
+  },
+  {
+   "n": 89,
+   "artist": "The Strokes",
+   "title": "Reptilia",
+   "official": true,
+   "md5": "a57effe7caf6d1daa49c21d4758d49e9"
+  },
+  {
+   "n": 90,
+   "artist": "Liam Lynch",
+   "title": "United States Of Whatever",
+   "official": false,
+   "md5": "2539b4af2e33c0aa4eeac9f64d295baa"
+  },
+  {
+   "n": 91,
+   "artist": "Billy Joel",
+   "title": "Movin' Out (Anthony's Song)",
+   "official": true,
+   "md5": "e45d3672c16f01e194537d71e8629b69"
+  },
+  {
+   "n": 92,
+   "artist": "The Backseat Lovers",
+   "title": "Kilby Girl",
+   "official": false,
+   "md5": "a9be1432fb5726f4537dca485c38c30b"
+  },
+  {
+   "n": 93,
+   "artist": "Thundercat",
+   "title": "Them Changes",
+   "official": false,
+   "md5": "7b5493b7bd61d51d84df78cc73ef71e7"
+  },
+  {
+   "n": 94,
+   "artist": "Pavement",
+   "title": "Range Life",
+   "official": false,
+   "md5": "2ba14b4a86455e725fc67460dd374bc3"
+  },
+  {
+   "n": 95,
+   "artist": "Tyler, The Creator, Kali Uchis",
+   "title": "See You Again",
+   "official": false,
+   "md5": "6508bdcdbd73b17e73c513df2291c521"
+  },
+  {
+   "n": 96,
+   "artist": "Limp Bizkit",
+   "title": "Break Stuff",
+   "official": false,
+   "md5": "fcb8bf129175f2787acc6ff46092eb39"
+  },
+  {
+   "n": 97,
+   "artist": "Sublime",
+   "title": "Doin' Time",
+   "official": false,
+   "md5": "d4c408a784d210a08077f5d637831211"
+  },
+  {
+   "n": 98,
+   "artist": "Masayoshi Takanaka",
+   "title": "READY TO FLY",
+   "official": false,
+   "md5": "2d07911ed1c7ec8e955ec80a30e4ccd3"
+  },
+  {
+   "n": 99,
+   "artist": "Masayoshi Takanaka",
+   "title": "SEXY DANCE",
+   "official": false,
+   "md5": "1090651ebb33d31177964738498cc707"
+  },
+  {
+   "n": 100,
+   "artist": "SEATBELTS",
+   "title": "Rush",
+   "official": false,
+   "md5": "b064e20fcef1c9d82aacea18bb2f6500"
+  },
+  {
+   "n": 101,
+   "artist": "Vampire Weekend",
+   "title": "Oxford Comma",
+   "official": false,
+   "md5": "79a4af6a556fe4477eed2e1f09dad060"
+  },
+  {
+   "n": 102,
+   "artist": "Vampire Weekend",
+   "title": "A-Punk",
+   "official": true,
+   "md5": "caa1838a3e9cbe05ab92f10a6c1a69dd"
+  },
+  {
+   "n": 103,
+   "artist": "Neutral Milk Hotel",
+   "title": "Holland, 1945",
+   "official": false,
+   "md5": "bf83a471b0ed4c0158970b90749e9f26"
+  },
+  {
+   "n": 104,
+   "artist": "Surf Curse",
+   "title": "Disco",
+   "official": false,
+   "md5": "e564b4c6423a43b6fc3aa38b97ebdda7"
+  },
+  {
+   "n": 105,
+   "artist": "Peach Pit",
+   "title": "Drop the Guillotine",
+   "official": false,
+   "md5": "ae805043903ee0225bbe385f5e87b012"
+  },
+  {
+   "n": 106,
+   "artist": "Peach Pit",
+   "title": "Tommy's Party",
+   "official": false,
+   "md5": "1c826ca46feda2dc7ade02596f21e686"
+  },
+  {
+   "n": 107,
+   "artist": "Briston Maroney",
+   "title": "Freakin' Out On the Interstate",
+   "official": false,
+   "md5": "e2b705b12afa2dcb5fc281c97a9650b5"
+  },
+  {
+   "n": 108,
+   "artist": "The Smiths",
+   "title": "This Charming Man",
+   "official": true,
+   "md5": "f4eb581f05b04464f12688fc580a7b37"
+  },
+  {
+   "n": 109,
+   "artist": "Neutral Milk Hotel",
+   "title": "In the Aeroplane Over the Sea",
+   "official": false,
+   "md5": "f388f8a871fad83110100ae673eb3bb0"
+  },
+  {
+   "n": 110,
+   "artist": "TV Girl",
+   "title": "Lovers Rock",
+   "official": false,
+   "md5": "512154382d4ad705e8c96f03d44305d0"
+  },
+  {
+   "n": 111,
+   "artist": "TV Girl",
+   "title": "Not Allowed",
+   "official": false,
+   "md5": "bcb224f76d7cc7884f06bcc803578f92"
+  },
+  {
+   "n": 112,
+   "artist": "Gorillaz, Mick Jones, Paul Simonon",
+   "title": "Plastic Beach",
+   "official": false,
+   "md5": "e6df366d89dc485aa2af86627e53473d"
+  },
+  {
+   "n": 113,
+   "artist": "MGMT",
+   "title": "Electric Feel",
+   "official": false,
+   "md5": "7b0e74da4157a76f308f7d3527057d1d"
+  },
+  {
+   "n": 114,
+   "artist": "Tyler, The Creator",
+   "title": "I THINK",
+   "official": false,
+   "md5": "7919d66453b1c450ff765269dbeeb250"
+  },
+  {
+   "n": 115,
+   "artist": "The Strokes",
+   "title": "Hard To Explain",
+   "official": false,
+   "md5": "634e6f7bc138640549c34a7a7208c63b"
+  },
+  {
+   "n": 116,
+   "artist": "The Strokes",
+   "title": "Selfless",
+   "official": false,
+   "md5": "bf9b5b11432a201e04d0a9a9bb26c3b1"
+  },
+  {
+   "n": 117,
+   "artist": "GROUPLOVE",
+   "title": "Tongue Tied",
+   "official": true,
+   "md5": "b05fd5b9cc588d2091f4e8d4b9fbf9cf"
+  },
+  {
+   "n": 118,
+   "artist": "The Strokes",
+   "title": "Why Are Sundays So Depressing",
+   "official": false,
+   "md5": "41febaac347b6df9cadfdaca8152fa60"
+  },
+  {
+   "n": 119,
+   "artist": "Pixies",
+   "title": "Here Comes Your Man",
+   "official": true,
+   "md5": "05dfceab87a1ee571cd396d325c7c0d7"
+  },
+  {
+   "n": 120,
+   "artist": "Wallows, Clairo",
+   "title": "Are You Bored Yet?",
+   "official": false,
+   "md5": "1769f06ca9372eceae92f3861aab4553"
+  },
+  {
+   "n": 121,
+   "artist": "Rex Orange County",
+   "title": "Pluto Projector",
+   "official": false,
+   "md5": "abea16a5ceefaea8413c3af54f57060a"
+  },
+  {
+   "n": 122,
+   "artist": "The Walters",
+   "title": "I Love You So",
+   "official": false,
+   "md5": "e1190cfc1196818d926c40411aef211a"
+  },
+  {
+   "n": 123,
+   "artist": "Gorillaz, Little Dragon",
+   "title": "Empire Ants",
+   "official": false,
+   "md5": "f265ec51536a063e4fe4b33b2ee2a133"
+  },
+  {
+   "n": 124,
+   "artist": "Pink Floyd",
+   "title": "Time",
+   "official": false,
+   "md5": "2140f1cc5fc21b4b0b7ea45f34fc8dc6"
+  },
+  {
+   "n": 125,
+   "artist": "Pink Floyd",
+   "title": "Comfortably Numb",
+   "official": false,
+   "md5": "425254263e05c4f5f8eeca2cdb7bf0f1"
+  },
+  {
+   "n": 126,
+   "artist": "Led Zeppelin",
+   "title": "Stairway to Heaven",
+   "official": false,
+   "md5": "95a0752ce5ac2f94ab594bf2f66c603b"
+  },
+  {
+   "n": 127,
+   "artist": "Led Zeppelin",
+   "title": "Whole Lotta Love",
+   "official": false,
+   "md5": "3c7f7a6546ffaf00322cd0a81860e23e"
+  },
+  {
+   "n": 128,
+   "artist": "Eagles",
+   "title": "Hotel California",
+   "official": false,
+   "md5": "7b6f2c56c472b321ad3a4d9cfa0aa48d"
+  },
+  {
+   "n": 129,
+   "artist": "The Police",
+   "title": "Roxanne",
+   "official": true,
+   "md5": "7eddd2676013223d3565c1d2f780039c"
+  },
+  {
+   "n": 130,
+   "artist": "The Police",
+   "title": "Message In A Bottle",
+   "official": true,
+   "md5": "cab3aea9703a4e3a1ec9a0d629d34417"
+  },
+  {
+   "n": 131,
+   "artist": "The Beatles",
+   "title": "Come Together",
+   "official": true,
+   "md5": "06f5217fc782917a074ce08a68b5981e"
+  },
+  {
+   "n": 132,
+   "artist": "The Beatles",
+   "title": "Lucy In The Sky With Diamonds",
+   "official": true,
+   "md5": "740786daf6e12183eed0e447df588c99"
+  },
+  {
+   "n": 133,
+   "artist": "The Beatles",
+   "title": "A Day In The Life",
+   "official": true,
+   "md5": "42fb44a13fb6ec89972f62a9deb7aed2"
+  },
+  {
+   "n": 134,
+   "artist": "The Beatles",
+   "title": "With A Little Help From My Friends",
+   "official": true,
+   "md5": "8fd94357dbb0fee5ace40fbfde059823"
+  },
+  {
+   "n": 135,
+   "artist": "The Beatles",
+   "title": "While My Guitar Gently Weeps",
+   "official": true,
+   "md5": "0c4d8fc25d06cc3232dfeccba948ad1f"
+  },
+  {
+   "n": 136,
+   "artist": "The Beatles",
+   "title": "When I'm Sixty Four",
+   "official": true,
+   "md5": "dd27b1d22504f95873247c483aae5d9e"
+  },
+  {
+   "n": 137,
+   "artist": "The Beatles",
+   "title": "Penny Lane",
+   "official": false,
+   "md5": "5f8a30ddd90ae707c87f745355677073"
+  },
+  {
+   "n": 138,
+   "artist": "The Beatles",
+   "title": "Ticket To Ride",
+   "official": true,
+   "md5": "44e1f6813019550fce0dd1f67b3a67b9"
+  },
+  {
+   "n": 139,
+   "artist": "The Beatles",
+   "title": "All You Need Is Love",
+   "official": true,
+   "md5": "e25dc10f72c2ec3a4831143ea3cb6705"
+  },
+  {
+   "n": 140,
+   "artist": "The Beatles",
+   "title": "Love Me Do",
+   "official": false,
+   "md5": "00b8562341de9fc9542af536d42bd5a4"
+  },
+  {
+   "n": 141,
+   "artist": "The Beatles",
+   "title": "Hello, Goodbye",
+   "official": true,
+   "md5": "06559a61d4db932f2f85d033a95795c4"
+  },
+  {
+   "n": 142,
+   "artist": "The Beatles",
+   "title": "I Want To Hold Your Hand",
+   "official": true,
+   "md5": "a6bb680de81fc5b0db321bdb1fc40b1e"
+  },
+  {
+   "n": 143,
+   "artist": "The Beatles",
+   "title": "Yellow Submarine",
+   "official": true,
+   "md5": "64d43bd72c0b04febc15711d5078115f"
+  },
+  {
+   "n": 144,
+   "artist": "The Beatles",
+   "title": "Drive My Car",
+   "official": true,
+   "md5": "e1bd2c42fe7206425339c1b113d509d0"
+  },
+  {
+   "n": 145,
+   "artist": "The Beatles",
+   "title": "Sgt. Pepper's Lonely Hearts Club Band",
+   "official": true,
+   "md5": "b41be5126df53646d50104c69e9dee14"
+  },
+  {
+   "n": 146,
+   "artist": "The Beatles",
+   "title": "Paperback Writer",
+   "official": true,
+   "md5": "b6818eba9387fc9b2908e714ca9ccec3"
+  },
+  {
+   "n": 147,
+   "artist": "The Beatles",
+   "title": "Revolution",
+   "official": true,
+   "md5": "f39cf22abd61c9c9af3d3b748c49c9ca"
+  },
+  {
+   "n": 148,
+   "artist": "The Beatles",
+   "title": "Get Back",
+   "official": true,
+   "md5": "472cd2ce19efa62741f7f5f4398ed198"
+  },
+  {
+   "n": 149,
+   "artist": "The Beatles",
+   "title": "The Ballad Of John And Yoko",
+   "official": false,
+   "md5": "f991ced1ce0a14b49139e8f866eae3f1"
+  },
+  {
+   "n": 150,
+   "artist": "The Kinks",
+   "title": "All Day and All of the Night",
+   "official": true,
+   "md5": "80e11c801ef2771a81d26ae23c0372ba"
+  },
+  {
+   "n": 151,
+   "artist": "The Beatles",
+   "title": "Can't Buy Me Love",
+   "official": true,
+   "md5": "874fae0fdafeaba8d231b39726917df0"
+  },
+  {
+   "n": 152,
+   "artist": "The Beatles",
+   "title": "A Hard Day's Night",
+   "official": true,
+   "md5": "4ca7496e5b0ae42d448ea8bb53a524cd"
+  },
+  {
+   "n": 153,
+   "artist": "Electric Light Orchestra",
+   "title": "Livin' Thing",
+   "official": false,
+   "md5": "7dfae11d252d70d4f3ed4d9d5685c466"
+  },
+  {
+   "n": 154,
+   "artist": "The Beatles",
+   "title": "I Saw Her Standing There",
+   "official": true,
+   "md5": "953fbbe6794514cc995dc25d7b96535c"
+  },
+  {
+   "n": 155,
+   "artist": "The Beatles",
+   "title": "I Feel Fine",
+   "official": true,
+   "md5": "9a3e1fc39f640e2d9b5461716b4dc479"
+  },
+  {
+   "n": 156,
+   "artist": "David Bowie",
+   "title": "Space Oddity",
+   "official": true,
+   "md5": "f1628287ac8fc73b7137d7b3b729c837"
+  },
+  {
+   "n": 157,
+   "artist": "David Bowie",
+   "title": "Moonage Daydream",
+   "official": true,
+   "md5": "0e4ec117a2f430c050d2ccb2a9d5cfac"
+  },
+  {
+   "n": 158,
+   "artist": "The Rolling Stones",
+   "title": "(I Can't Get No) Satisfaction",
+   "official": true,
+   "md5": "150019978a84d3bd8937ba9e50cfbe77"
+  },
+  {
+   "n": 159,
+   "artist": "Radiohead",
+   "title": "Jigsaw Falling Into Place",
+   "official": false,
+   "md5": "e44995bf599d6479eb506f147c6be247"
+  },
+  {
+   "n": 160,
+   "artist": "Radiohead",
+   "title": "Paranoid Android",
+   "official": false,
+   "md5": "60371a8494bd7bd68285b5cf106c5583"
+  },
+  {
+   "n": 161,
+   "artist": "Radiohead",
+   "title": "My Iron Lung",
+   "official": true,
+   "md5": "54595ae44f7059e795a642ba327e0af1"
+  },
+  {
+   "n": 162,
+   "artist": "311",
+   "title": "Amber",
+   "official": true,
+   "md5": "5e378d329c1de579415a7f80b1cec203"
+  },
+  {
+   "n": 163,
+   "artist": "311",
+   "title": "Champagne",
+   "official": false,
+   "md5": "b2fd58529bb240363a33b4aac8d21f86"
+  },
+  {
+   "n": 164,
+   "artist": "Sublime",
+   "title": "Smoke Two Joints",
+   "official": false,
+   "md5": "fa640b2c8b81d7b48971d7a63410bfeb"
+  },
+  {
+   "n": 165,
+   "artist": "Frank Ocean, Earl Sweatshirt",
+   "title": "Super Rich Kids",
+   "official": false,
+   "md5": "9b48a5e7a73ffdbcd64fa1675a6f800d"
+  },
+  {
+   "n": 166,
+   "artist": "Blondie",
+   "title": "Heart Of Glass",
+   "official": true,
+   "md5": "b79953a69d4c93baf4ac0cbecd116840"
+  },
+  {
+   "n": 167,
+   "artist": "Le Tigre",
+   "title": "Deceptacon",
+   "official": false,
+   "md5": "c0949053728a5081f6999837f7bf1a97"
+  },
+  {
+   "n": 168,
+   "artist": "Tears For Fears",
+   "title": "Everybody Wants To Rule The World",
+   "official": true,
+   "md5": "5b20ecbeed4bb29f35428375efed84e0"
+  },
+  {
+   "n": 169,
+   "artist": "The Drums",
+   "title": "Money",
+   "official": false,
+   "md5": "c1578d9664e9daedfb295ffcd68c80f0"
+  },
+  {
+   "n": 170,
+   "artist": "Radiohead",
+   "title": "Creep",
+   "official": true,
+   "md5": "a5074c86bcc83298eea3428e8889c7de"
+  },
+  {
+   "n": 171,
+   "artist": "Roar",
+   "title": "I Can't Handle Change",
+   "official": false,
+   "md5": "f5adfe99aa05807ed1634495f77292bf"
+  },
+  {
+   "n": 172,
+   "artist": "Coldplay",
+   "title": "Yellow",
+   "official": true,
+   "md5": "267c7ff5348fd568853056c230bfdcae"
+  },
+  {
+   "n": 173,
+   "artist": "Failure",
+   "title": "Stuck on You",
+   "official": false,
+   "md5": "ee2b5a3cc88b616eee3d4b600d5cace8"
+  },
+  {
+   "n": 174,
+   "artist": "Neutral Milk Hotel",
+   "title": "Communist Daughter",
+   "official": false,
+   "md5": "5614c48bfc90b5c6c1bcb7245342c29b"
+  },
+  {
+   "n": 175,
+   "artist": "Radiohead",
+   "title": "No Surprises",
+   "official": false,
+   "md5": "62e502e7ed1d7a136e0cf4a47c4a7c32"
+  },
+  {
+   "n": 176,
+   "artist": "The Smiths",
+   "title": "Frankly, Mr. Shankly",
+   "official": false,
+   "md5": "1f7baf015caca29282084c4b42eae4ec"
+  },
+  {
+   "n": 177,
+   "artist": "Mac DeMarco",
+   "title": "Freaking Out the Neighborhood",
+   "official": false,
+   "md5": "2868765ffe430c7361abbb5e7923fda9"
+  },
+  {
+   "n": 178,
+   "artist": "The Cure",
+   "title": "Boys Don't Cry",
+   "official": false,
+   "md5": "b91fe993574b8a7045de3a57ab2ee055"
+  },
+  {
+   "n": 179,
+   "artist": "Styx",
+   "title": "Come Sail Away",
+   "official": false,
+   "md5": "7939450ec12e2232456ab584309f9bce"
+  },
+  {
+   "n": 180,
+   "artist": "The Rah Band",
+   "title": "Messages from the Stars",
+   "official": false,
+   "md5": "05de4b92b5208179921866880a79ab56"
+  },
+  {
+   "n": 181,
+   "artist": "Lil Uzi Vert",
+   "title": "20 Min",
+   "official": false,
+   "md5": "77160ec7200a4af1f515543e591aa3eb"
+  },
+  {
+   "n": 182,
+   "artist": "The Clash",
+   "title": "Lost in the Supermarket",
+   "official": true,
+   "md5": "283c417a5566cc0b2e210d044e588a5b"
+  },
+  {
+   "n": 183,
+   "artist": "Blur",
+   "title": "Song 2",
+   "official": true,
+   "md5": "bdfd5e8c157fbe4674dde043019a9906"
+  },
+  {
+   "n": 184,
+   "artist": "Tally Hall",
+   "title": "&",
+   "official": false,
+   "md5": "a01c64bc5e90209f8162637c66795480"
+  },
+  {
+   "n": 185,
+   "artist": "Daft Punk",
+   "title": "One More Time",
+   "official": false,
+   "md5": "20eb6e7515eb2b44f178f77439cbbe90"
+  },
+  {
+   "n": 186,
+   "artist": "The Smiths",
+   "title": "Heaven Knows I'm Miserable Now",
+   "official": false,
+   "md5": "b1d5bda515c052c4712b3d21384bb2e2"
+  },
+  {
+   "n": 187,
+   "artist": "Mac DeMarco",
+   "title": "Blue Boy",
+   "official": false,
+   "md5": "11974d920cff87fe157bae8aa91275dd"
+  },
+  {
+   "n": 188,
+   "artist": "Soft Cell",
+   "title": "Tainted Love",
+   "official": true,
+   "md5": "587ca0dbfb810ff5ed91eb144dd9334a"
+  },
+  {
+   "n": 189,
+   "artist": "Lady Gaga",
+   "title": "Poker Face",
+   "official": true,
+   "md5": "0f4c193ec8961a14bd7c903aeb1e06f9"
+  },
+  {
+   "n": 190,
+   "artist": "Mac DeMarco",
+   "title": "Salad Days",
+   "official": false,
+   "md5": "2b0fce6eabee987a1947a5728dfad33e"
+  },
+  {
+   "n": 191,
+   "artist": "Masayoshi Takanaka",
+   "title": "SPEED OF LOVE",
+   "official": false,
+   "md5": "6a41070fa3846933dde7000c98be1552"
+  },
+  {
+   "n": 192,
+   "artist": "Heart",
+   "title": "Crazy On You",
+   "official": true,
+   "md5": "7d64050756943992cdd2e8ca2ac0abca"
+  },
+  {
+   "n": 193,
+   "artist": "The Strokes",
+   "title": "Soma",
+   "official": false,
+   "md5": "81cf110d8a9db0cb2f14cfceadc7ae6e"
+  },
+  {
+   "n": 194,
+   "artist": "Slightly Stoopid",
+   "title": "Closer to the Sun",
+   "official": false,
+   "md5": "8e3bd718dcf40631d17a0716585513f2"
+  },
+  {
+   "n": 195,
+   "artist": "Ramones",
+   "title": "Blitzkrieg Bop",
+   "official": true,
+   "md5": "1d7d183cdd121bdd986fed36f2105d5c"
+  },
+  {
+   "n": 196,
+   "artist": "Pinegrove",
+   "title": "Need 2",
+   "official": false,
+   "md5": "99032097e4dcdf420f89401ab39d1a11"
+  },
+  {
+   "n": 197,
+   "artist": "The Smiths",
+   "title": "Back to the Old House",
+   "official": false,
+   "md5": "dfc9979e2dc34158d2d832b70a665d5e"
+  },
+  {
+   "n": 198,
+   "artist": "The Cranberries",
+   "title": "Linger",
+   "official": true,
+   "md5": "15e23b47b73dba6781f4aaeea3f0c733"
+  },
+  {
+   "n": 199,
+   "artist": "Elliott Smith",
+   "title": "L.A.",
+   "official": true,
+   "md5": "888fd5fbd59e89e34191f859fa9954dd"
+  },
+  {
+   "n": 200,
+   "artist": "Beck",
+   "title": "Gamma Ray",
+   "official": true,
+   "md5": "06251293684ee6c33194563b6de95d89"
+  },
+  {
+   "n": 201,
+   "artist": "Styx",
+   "title": "Renegade",
+   "official": true,
+   "md5": "cb14ded36d720c1f058b6cc89a25b841"
+  },
+  {
+   "n": 202,
+   "artist": "Men At Work",
+   "title": "Down Under",
+   "official": true,
+   "md5": "fa53ce3eefff73fb0ad442e8c8915c15"
+  },
+  {
+   "n": 203,
+   "artist": "Creedence Clearwater Revival",
+   "title": "Run Through The Jungle",
+   "official": true,
+   "md5": "87eb2ebb1db05835f981eac5c057bea4"
+  },
+  {
+   "n": 204,
+   "artist": "Silver",
+   "title": "Wham Bam Shang-A-Lang",
+   "official": false,
+   "md5": "a73fb3a9c6075856510263467ffc21c4"
+  },
+  {
+   "n": 205,
+   "artist": "Daft Punk",
+   "title": "Harder, Better, Faster, Stronger",
+   "official": false,
+   "md5": "c4e6cd44a2b427dae8d11bf9b35a6a6f"
+  },
+  {
+   "n": 206,
+   "artist": "Pink Floyd",
+   "title": "Eclipse",
+   "official": false,
+   "md5": "509df7431ac122f10912b8250d227b07"
+  },
+  {
+   "n": 207,
+   "artist": "Canned Heat",
+   "title": "Going Up The Country",
+   "official": false,
+   "md5": "0d2a75e7e9ca0278f04eed778f12da18"
+  },
+  {
+   "n": 208,
+   "artist": "America, George Martin",
+   "title": "Ventura Highway",
+   "official": false,
+   "md5": "fabba0dbd72b33b9f5b9617acf184678"
+  },
+  {
+   "n": 209,
+   "artist": "Queen",
+   "title": "Killer Queen",
+   "official": true,
+   "md5": "465cc2b614e356df3a292b3d910ba1f3"
+  },
+  {
+   "n": 210,
+   "artist": "Ramones",
+   "title": "I Wanna Be Sedated",
+   "official": true,
+   "md5": "aaa7356c7b3047c26768a61dc9147223"
+  },
+  {
+   "n": 211,
+   "artist": "The Rolling Stones",
+   "title": "Paint It, Black",
+   "official": true,
+   "md5": "ea98d105e9871fd3b8607c36a9d5c852"
+  },
+  {
+   "n": 212,
+   "artist": "Michael Jackson",
+   "title": "Billie Jean",
+   "official": false,
+   "md5": "3450536f701a5e7e0c6790a580c27972"
+  },
+  {
+   "n": 213,
+   "artist": "Men At Work",
+   "title": "Who Can It Be Now?",
+   "official": false,
+   "md5": "72cccf6838dfd89e7e114606437f7315"
+  },
+  {
+   "n": 214,
+   "artist": "Yes",
+   "title": "Roundabout",
+   "official": true,
+   "md5": "868dff44253b6d6ffb3e87fa79bb1fc3"
+  },
+  {
+   "n": 215,
+   "artist": "TOTO",
+   "title": "Hold the Line",
+   "official": false,
+   "md5": "202e5014e85aa6006996f87afd6caa62"
+  },
+  {
+   "n": 216,
+   "artist": "No Doubt",
+   "title": "Just A Girl",
+   "official": true,
+   "md5": "14ecfb5aaf9f819f4b050052bfcd972c"
+  },
+  {
+   "n": 217,
+   "artist": "The Doors",
+   "title": "Break on Through (To the Other Side)",
+   "official": true,
+   "md5": "0450e3ea45d0b01d46bb7e42ac65b307"
+  },
+  {
+   "n": 218,
+   "artist": "Radiohead",
+   "title": "High and Dry",
+   "official": false,
+   "md5": "b2c9a4081fa2f0723003261a20ba2921"
+  },
+  {
+   "n": 219,
+   "artist": "Billy Bragg, Wilco",
+   "title": "California Stars",
+   "official": false,
+   "md5": "09e86eb699c63b1073f5164c3e37442c"
+  },
+  {
+   "n": 220,
+   "artist": "Blind Melon",
+   "title": "No Rain",
+   "official": true,
+   "md5": "df17ab43d5afd3b260043b0ab5d59a3f"
+  },
+  {
+   "n": 221,
+   "artist": "Alice Phoebe Lou",
+   "title": "Witches",
+   "official": false,
+   "md5": "b5b0a5709632f5874936d7693244aef0"
+  },
+  {
+   "n": 222,
+   "artist": "Cocteau Twins",
+   "title": "Cherry-coloured Funk",
+   "official": false,
+   "md5": "8e5c3b87ffd15c244bd9135940494f92"
+  },
+  {
+   "n": 223,
+   "artist": "Car Seat Headrest",
+   "title": "Drunk Drivers/Killer Whales",
+   "official": false,
+   "md5": "884d79c31438aac03d85b77b9001d2c0"
+  },
+  {
+   "n": 224,
+   "artist": "Crumb",
+   "title": "Ghostride",
+   "official": false,
+   "md5": "b2173ca569bb469672973a64ed96b345"
+  },
+  {
+   "n": 225,
+   "artist": "Men I Trust",
+   "title": "Show Me How",
+   "official": false,
+   "md5": "5f712e08cfab74976549d40f02d966eb"
+  },
+  {
+   "n": 226,
+   "artist": "The Strokes",
+   "title": "Ode To The Mets",
+   "official": false,
+   "md5": "3f407fadcdef26e55c4a88b15997729d"
+  },
+  {
+   "n": 227,
+   "artist": "Empire Of The Sun",
+   "title": "Walking On A Dream",
+   "official": false,
+   "md5": "3841d4cfffbe580bba58e07fd59d20c2"
+  },
+  {
+   "n": 228,
+   "artist": "Sonic Youth",
+   "title": "Superstar",
+   "official": false,
+   "md5": "e19170e321abbe68ad340986b22e1f6a"
+  },
+  {
+   "n": 229,
+   "artist": "Vampire Weekend",
+   "title": "Diane Young",
+   "official": false,
+   "md5": "4ce9fd1046d71568522bf11ed07040fd"
+  },
+  {
+   "n": 230,
+   "artist": "Courtney Barnett",
+   "title": "Avant Gardener",
+   "official": false,
+   "md5": "cb9dd2da7dcb1b6613abed28db8bd1a7"
+  },
+  {
+   "n": 231,
+   "artist": "The Clash",
+   "title": "London Calling",
+   "official": true,
+   "md5": "9f1329425b225e41056ed5dd69eaf2f9"
+  },
+  {
+   "n": 232,
+   "artist": "Metric, Brie Larson",
+   "title": "Black Sheep",
+   "official": false,
+   "md5": "b96fa853a2ceab79c57b6bd06e60d839"
+  },
+  {
+   "n": 233,
+   "artist": "Mac DeMarco",
+   "title": "Ode to Viceroy",
+   "official": false,
+   "md5": "90db12e273931b1140ebb52456802802"
+  },
+  {
+   "n": 234,
+   "artist": "Billy Idol",
+   "title": "Eyes Without A Face",
+   "official": false,
+   "md5": "7b157786fce9de77c3d81c78229b588b"
+  },
+  {
+   "n": 235,
+   "artist": "Daft Punk",
+   "title": "Veridis Quo",
+   "official": false,
+   "md5": "dd089bcc359642f7ae6c9b65d6cc22db"
+  },
+  {
+   "n": 236,
+   "artist": "Daft Punk",
+   "title": "Voyager",
+   "official": false,
+   "md5": "fb8a404223083a3484e511c1f5d29c8b"
+  },
+  {
+   "n": 237,
+   "artist": "Franz Ferdinand",
+   "title": "Take Me Out",
+   "official": true,
+   "md5": "f3aed706fd4f7ab4723a95be70ddc3b6"
+  },
+  {
+   "n": 238,
+   "artist": "LCD Soundsystem",
+   "title": "Dance Yrself Clean",
+   "official": false,
+   "md5": "1a696271b77fb007a4bb6a72e65bc86a"
+  },
+  {
+   "n": 239,
+   "artist": "Black Country, New Road",
+   "title": "Intro",
+   "official": false,
+   "md5": "e10c7e7711a5c9e2ac995fdceaead8e2"
+  },
+  {
+   "n": 240,
+   "artist": "Black Country, New Road",
+   "title": "Concorde",
+   "official": false,
+   "md5": "25fea1150ad925bcfa764f49037f0370"
+  },
+  {
+   "n": 241,
+   "artist": "Gorillaz, De La Soul",
+   "title": "Feel Good Inc.",
+   "official": true,
+   "md5": "169b8dc8d6e2ac2bf1d91f0b47e1ba8d"
+  },
+  {
+   "n": 242,
+   "artist": "Gorillaz, Del The Funky Homosapien",
+   "title": "Clint Eastwood",
+   "official": true,
+   "md5": "7fdbcaa669ec09ff8096837f9676fb12"
+  },
+  {
+   "n": 243,
+   "artist": "America",
+   "title": "Sister Golden Hair",
+   "official": false,
+   "md5": "7ac167df87f9cdd6df51d44ee6be964b"
+  },
+  {
+   "n": 244,
+   "artist": "Duran Duran",
+   "title": "INVISIBLE",
+   "official": false,
+   "md5": "f68e4ca7ccbc1d1decccfd72e1af8536"
+  },
+  {
+   "n": 245,
+   "artist": "Savage Garden",
+   "title": "I Want You",
+   "official": false,
+   "md5": "6cd4efd43a778e2bc1a109f4354a1694"
+  },
+  {
+   "n": 246,
+   "artist": "JPEGMAFIA",
+   "title": "SIN MIEDO",
+   "official": false,
+   "md5": "50c97236d05e0a283b90254ef1335a6e"
+  },
+  {
+   "n": 247,
+   "artist": "JPEGMAFIA, Danny Brown",
+   "title": "Lean Beef Patty",
+   "official": false,
+   "md5": "8b5fccc42b57444dedd7dedf65058eca"
+  },
+  {
+   "n": 248,
+   "artist": "Blur",
+   "title": "Girls & Boys",
+   "official": false,
+   "md5": "6610d594b50d5c3de2f592700683cafe"
+  },
+  {
+   "n": 249,
+   "artist": "Tiffany",
+   "title": "I Think We're Alone Now",
+   "official": false,
+   "md5": "fb21d0555ba6ba08ea295f966adec036"
+  },
+  {
+   "n": 250,
+   "artist": "JPEGMAFIA",
+   "title": "either on or off the drugs",
+   "official": false,
+   "md5": "0be6ddab239fd2684208dacfb8993f2d"
+  },
+  {
+   "n": 251,
+   "artist": "Pat Metheny Group",
+   "title": "Last Train Home",
+   "official": false,
+   "md5": "08b6f5076b9b6551b4a5691ddcb6679c"
+  },
+  {
+   "n": 252,
+   "artist": "America, George Martin",
+   "title": "A Horse with No Name",
+   "official": false,
+   "md5": "83dfed350f6d4b430502e810c7ca9562"
+  },
+  {
+   "n": 253,
+   "artist": "Johnny Cash",
+   "title": "Ring of Fire",
+   "official": true,
+   "md5": "9921934f77ac1da92b483597e3da4100"
+  },
+  {
+   "n": 254,
+   "artist": "Dinosaur Jr.",
+   "title": "Feel the Pain",
+   "official": true,
+   "md5": "be64ebd0dd7eaeed199a66233ee37ca5"
+  },
+  {
+   "n": 255,
+   "artist": "Kendrick Lamar",
+   "title": "squabble up",
+   "official": false,
+   "md5": "1f4bcc91f1306c2703f761d01653d9a9"
+  },
+  {
+   "n": 256,
+   "artist": "Justice",
+   "title": "D.A.N.C.E.",
+   "official": false,
+   "md5": "b4ff87177abd0db14a13cff683fe6a60"
+  },
+  {
+   "n": 257,
+   "artist": "Daft Punk",
+   "title": "Digital Love",
+   "official": false,
+   "md5": "667f8c6a4202f98f86332ff9c32cfe0c"
+  },
+  {
+   "n": 258,
+   "artist": "Fatboy Slim",
+   "title": "Praise You",
+   "official": false,
+   "md5": "91aaaab2e261655a5c67ea2523bc996d"
+  },
+  {
+   "n": 259,
+   "artist": "New Order",
+   "title": "Blue Monday",
+   "official": true,
+   "md5": "8cd443731d728caabddd55df0f662cd3"
+  },
+  {
+   "n": 260,
+   "artist": "JPEGMAFIA",
+   "title": "I'll Be Right There",
+   "official": false,
+   "md5": "91022517770977b85bb4989aa133c6cd"
+  },
+  {
+   "n": 261,
+   "artist": "Dire Straits",
+   "title": "Sultans of Swing",
+   "official": true,
+   "md5": "a25362f3abba7f8026084c9744934e5b"
+  },
+  {
+   "n": 262,
+   "artist": "The Bangles",
+   "title": "Walk Like an Egyptian",
+   "official": true,
+   "md5": "68c226757a9b908359c006e19b014262"
+  },
+  {
+   "n": 263,
+   "artist": "Cheap Trick",
+   "title": "Surrender",
+   "official": true,
+   "md5": "bb56e8750c492a05de758ccf82d73d0e"
+  },
+  {
+   "n": 264,
+   "artist": "Talking Heads",
+   "title": "And She Was",
+   "official": true,
+   "md5": "74ea842960cf8664e937fe7fe99726a5"
+  },
+  {
+   "n": 265,
+   "artist": "Supertramp",
+   "title": "Goodbye Stranger",
+   "official": false,
+   "md5": "a2cfb50c6a94bbb1c268bc3e02563637"
+  },
+  {
+   "n": 266,
+   "artist": "Vampire Weekend",
+   "title": "Cape Cod Kwassa Kwassa",
+   "official": false,
+   "md5": "9654c827d08cfc583980313ee47913e4"
+  },
+  {
+   "n": 267,
+   "artist": "Vampire Weekend",
+   "title": "M79",
+   "official": false,
+   "md5": "649c8346a913682bebbe4e4795f190e4"
+  },
+  {
+   "n": 268,
+   "artist": "Vampire Weekend",
+   "title": "Horchata",
+   "official": false,
+   "md5": "6eb57b70b7130e466e33459135f88fa2"
+  },
+  {
+   "n": 269,
+   "artist": "Eagles",
+   "title": "One of These Nights",
+   "official": true,
+   "md5": "cbe40d09dd9f1211e4337bd8e704332f"
+  },
+  {
+   "n": 270,
+   "artist": "Primus",
+   "title": "My Name Is Mud",
+   "official": false,
+   "md5": "130b2d3222914260a6bce8f3357492ac"
+  },
+  {
+   "n": 271,
+   "artist": "The Suicide Machines",
+   "title": "New Girl",
+   "official": false,
+   "md5": "29c6e79e47a6dcf545f0fc2613b330e8"
+  },
+  {
+   "n": 272,
+   "artist": "Weezer",
+   "title": "Island In The Sun",
+   "official": true,
+   "md5": "9790c7c6931a11e2040d557735c3c03b"
+  },
+  {
+   "n": 273,
+   "artist": "Weezer",
+   "title": "Beverly Hills",
+   "official": true,
+   "md5": "e9076c0edf848767778539df289a9e74"
+  },
+  {
+   "n": 274,
+   "artist": "Marcy Playground",
+   "title": "Sex & Candy",
+   "official": true,
+   "md5": "4f33c3a6aae1f9b0f3480e3df9d91617"
+  },
+  {
+   "n": 275,
+   "artist": "Weezer",
+   "title": "Buddy Holly",
+   "official": true,
+   "md5": "d1a738e953dc46050add219ff82d4e8d"
+  },
+  {
+   "n": 276,
+   "artist": "The Presidents Of The United States Of America",
+   "title": "Peaches",
+   "official": false,
+   "md5": "55b30532b5b5153da8cb172efa806970"
+  },
+  {
+   "n": 277,
+   "artist": "CAKE",
+   "title": "Short Skirt / Long Jacket",
+   "official": true,
+   "md5": "637edf7ebe4c39611cc276986ef41ac2"
+  },
+  {
+   "n": 278,
+   "artist": "Third Eye Blind",
+   "title": "Semi-Charmed Life",
+   "official": true,
+   "md5": "67f98bfd114a86a1c4bc95a5f06b4c1b"
+  },
+  {
+   "n": 279,
+   "artist": "Weezer",
+   "title": "Say It Ain't So",
+   "official": true,
+   "md5": "42bd7fb2fe173933cc6348e032c02566"
+  },
+  {
+   "n": 280,
+   "artist": "Weezer",
+   "title": "Undone - The Sweater Song",
+   "official": true,
+   "md5": "bd7bc53c9c6bdf18d2b9d0bc13f266a0"
+  },
+  {
+   "n": 281,
+   "artist": "Johnny Cash",
+   "title": "Folsom Prison Blues",
+   "official": true,
+   "md5": "cf3f3ed44c70f421007a014f4ddc521a"
+  },
+  {
+   "n": 282,
+   "artist": "Kenny Rogers",
+   "title": "The Gambler",
+   "official": true,
+   "md5": "7e6f5aa384f8342d13d37dab80ae4430"
+  },
+  {
+   "n": 283,
+   "artist": "CAKE",
+   "title": "The Distance",
+   "official": false,
+   "md5": "06cf4d4b47aaa92da0fac7f43081e33f"
+  },
+  {
+   "n": 284,
+   "artist": "Vince Staples",
+   "title": "Yeah Right",
+   "official": false,
+   "md5": "a16add6e37bc563d59cdc3a77456c920"
+  },
+  {
+   "n": 285,
+   "artist": "Sabrina Carpenter",
+   "title": "Juno",
+   "official": false,
+   "md5": "5a52c9a48962df10fdf89fe3262b7668"
+  },
+  {
+   "n": 286,
+   "artist": "Red Hot Chili Peppers",
+   "title": "Can't Stop",
+   "official": true,
+   "md5": "0a35bf253c9b17ff09a692d9de9ecd71"
+  },
+  {
+   "n": 287,
+   "artist": "Primus",
+   "title": "Jerry Was A Race Car Driver",
+   "official": true,
+   "md5": "a57e9315acdd4dc00d1bd1c98672fe14"
+  },
+  {
+   "n": 288,
+   "artist": "Kacey Musgraves",
+   "title": "there is a light",
+   "official": false,
+   "md5": "8d8b081008511f931732912afa1e2572"
+  },
+  {
+   "n": 289,
+   "artist": "Rush",
+   "title": "YYZ",
+   "official": true,
+   "md5": "1e398cb097193b9729ce3a57d535d363"
+  },
+  {
+   "n": 290,
+   "artist": "Rush",
+   "title": "Tom Sawyer",
+   "official": true,
+   "md5": "8023ac68e7e1542be9aa7a0ef9bc4d5f"
+  },
+  {
+   "n": 291,
+   "artist": "Primus",
+   "title": "Electric Uncle Sam",
+   "official": false,
+   "md5": "18ef14048095641e51139aa032e76105"
+  },
+  {
+   "n": 292,
+   "artist": "Oasis",
+   "title": "Live Forever",
+   "official": true,
+   "md5": "42e811e635f27dda0b45b148f1b97f64"
+  },
+  {
+   "n": 293,
+   "artist": "Chris Isaak",
+   "title": "Wicked Game",
+   "official": false,
+   "md5": "9396d14a008930133e4291ec03d53dd2"
+  },
+  {
+   "n": 294,
+   "artist": "Daft Punk",
+   "title": "Robot Rock / Oh Yeah",
+   "official": false,
+   "md5": "7f580be5b3dde5234fa0f108f2b1c8b0"
+  },
+  {
+   "n": 295,
+   "artist": "Daft Punk",
+   "title": "Aerodynamic Beats / Gabrielle , Forget About the World",
+   "official": false,
+   "md5": "479c7b6508d9d1f8f7c6c5179ffed7a2"
+  },
+  {
+   "n": 296,
+   "artist": "Daft Punk",
+   "title": "Face to Face / Short Circuit",
+   "official": false,
+   "md5": "d94e7ca3741b0fee351353db805fb390"
+  },
+  {
+   "n": 297,
+   "artist": "Daft Punk",
+   "title": "Da Funk / Daftendirekt",
+   "official": false,
+   "md5": "6d9e2a5f1145a2e12ab8678d37541dd8"
+  },
+  {
+   "n": 298,
+   "artist": "Yes",
+   "title": "Owner of a Lonely Heart",
+   "official": true,
+   "md5": "e9096b98f00f7896ccc9348c1c783087"
+  },
+  {
+   "n": 299,
+   "artist": "The Vandals",
+   "title": "My Girlfriend's Dead",
+   "official": false,
+   "md5": "8dad2758ebafcbf087cbb18dad2f3c06"
+  },
+  {
+   "n": 300,
+   "artist": "Daft Punk",
+   "title": "Da Funk",
+   "official": false,
+   "md5": "e2d94f84bf6169f4864c7f7aa0b3aef5"
+  },
+  {
+   "n": 301,
+   "artist": "Michael Jackson",
+   "title": "Beat It",
+   "official": true,
+   "md5": "5771fec370e0de3112f738cecbf57b81"
+  },
+  {
+   "n": 302,
+   "artist": "Drake",
+   "title": "NOKIA",
+   "official": false,
+   "md5": "2130f21b9bf207268ab8b44d72fb1da9"
+  },
+  {
+   "n": 303,
+   "artist": "ABBA",
+   "title": "Fernando",
+   "official": false,
+   "md5": "514cb224f36d13eb7f9dde8b4085f6ca"
+  },
+  {
+   "n": 304,
+   "artist": "Weezer",
+   "title": "Hash Pipe",
+   "official": true,
+   "md5": "81b908da70ade4cfe613667ffe663730"
+  },
+  {
+   "n": 305,
+   "artist": "The Cure",
+   "title": "Friday I'm in Love",
+   "official": true,
+   "md5": "4d530d730a4ddb5e2e189de21461a803"
+  },
+  {
+   "n": 306,
+   "artist": "Weezer",
+   "title": "My Name Is Jonas",
+   "official": true,
+   "md5": "aba192590591f9e423c27851788965c3"
+  },
+  {
+   "n": 307,
+   "artist": "Weezer",
+   "title": "Pork And Beans",
+   "official": true,
+   "md5": "032168a43da5f7c8184c229e693a355c"
+  },
+  {
+   "n": 308,
+   "artist": "Ween",
+   "title": "Waving My Dick in the Wind",
+   "official": false,
+   "md5": "8f8eff122db49f7fe72401aac992a057"
+  },
+  {
+   "n": 309,
+   "artist": "DEVO",
+   "title": "Uncontrollable Urge",
+   "official": true,
+   "md5": "e05616bddad458b0cb3701a481ee8628"
+  },
+  {
+   "n": 310,
+   "artist": "Oasis",
+   "title": "Rock 'n' Roll Star",
+   "official": true,
+   "md5": "24685e98ce943a1b805284422766655b"
+  },
+  {
+   "n": 311,
+   "artist": "LCD Soundsystem",
+   "title": "All My Friends",
+   "official": false,
+   "md5": "a22c542b0fb609560cc478aaf4bc1f33"
+  },
+  {
+   "n": 312,
+   "artist": "Beck",
+   "title": "Where It's At",
+   "official": false,
+   "md5": "c78cd6a28d9994406f9ebad56a14ff19"
+  },
+  {
+   "n": 313,
+   "artist": "Oasis",
+   "title": "Acquiesce",
+   "official": false,
+   "md5": "438c5cf7a552bad300bfe10a20fa7214"
+  },
+  {
+   "n": 314,
+   "artist": "Viagra Boys",
+   "title": "Man Made of Meat",
+   "official": false,
+   "md5": "c6a207c8fc840e250f171e4c588e8013"
+  },
+  {
+   "n": 315,
+   "artist": "Black Country, New Road",
+   "title": "Good Will Hunting",
+   "official": false,
+   "md5": "4bbe30eccd12250a1bd1871d3edda3ec"
+  },
+  {
+   "n": 316,
+   "artist": "Dinosaur Jr.",
+   "title": "Little Fury Things",
+   "official": false,
+   "md5": "5176aa28496f310fd0eebf0746875d84"
+  },
+  {
+   "n": 317,
+   "artist": "Death Grips",
+   "title": "Get Got",
+   "official": false,
+   "md5": "84248144838e99e30eb986d46e7e3b74"
+  },
+  {
+   "n": 318,
+   "artist": "Death Grips",
+   "title": "I've Seen Footage",
+   "official": false,
+   "md5": "d03f3b99f447feff2f912883b8864afd"
+  },
+  {
+   "n": 319,
+   "artist": "Geordie Greep",
+   "title": "Blues",
+   "official": false,
+   "md5": "fe5deee77d95ad420e163e83e8aebe2f"
+  },
+  {
+   "n": 320,
+   "artist": "Geese",
+   "title": "Au Pays du Cocaine",
+   "official": false,
+   "md5": "e823fa018cd4a39da9ba94af7d732bb3"
+  },
+  {
+   "n": 321,
+   "artist": "The Fratellis",
+   "title": "Chelsea Dagger",
+   "official": true,
+   "md5": "430ba6cb48f2e115c5e6e38304147df0"
+  },
+  {
+   "n": 322,
+   "artist": "Wilco",
+   "title": "California Stars",
+   "official": false,
+   "md5": "09e86eb699c63b1073f5164c3e37442c"
+  },
+  {
+   "n": 323,
+   "artist": "Geese",
+   "title": "2122",
+   "official": false,
+   "md5": "0ef1b4b388c4fa07e8e5fc6d581ddb37"
+  },
+  {
+   "n": 324,
+   "artist": "Viagra Boys",
+   "title": "Uno II",
+   "official": false,
+   "md5": "4da9e56834bae7ea2e05f3ee9fba598f"
+  },
+  {
+   "n": 325,
+   "artist": "Viagra Boys",
+   "title": "Sports",
+   "official": false,
+   "md5": "bc4401d53bf636f9772dd0e02dafa6fe"
+  },
+  {
+   "n": 326,
+   "artist": "Viagra Boys",
+   "title": "Punk Rock Loser",
+   "official": false,
+   "md5": "c47c856bab120fc8c365a4f1324c500c"
+  },
+  {
+   "n": 327,
+   "artist": "Chappell Roan",
+   "title": "Super Graphic Ultra Modern Girl",
+   "official": false,
+   "md5": "15c224b11bdcc4bc029eca59ae760e47"
+  },
+  {
+   "n": 328,
+   "artist": "JPEGMAFIA, Danny Brown",
+   "title": "Steppa Pig",
+   "official": false,
+   "md5": "26c2ead3d3cd098549a7a7627c577235"
+  },
+  {
+   "n": 329,
+   "artist": "Primus",
+   "title": "Wynona's Big Brown Beaver",
+   "official": false,
+   "md5": "7d5e385cead17f4f246988aad78bdfe1"
+  },
+  {
+   "n": 330,
+   "artist": "Rush",
+   "title": "Limelight",
+   "official": true,
+   "md5": "101025ce7dab9f287bfb02aa21e4d81e"
+  },
+  {
+   "n": 331,
+   "artist": "Heart",
+   "title": "Magic Man",
+   "official": false,
+   "md5": "554fe871fb110a3ba55887807b83c439"
+  },
+  {
+   "n": 332,
+   "artist": "Teddybears, Iggy Pop",
+   "title": "Punkrocker",
+   "official": false,
+   "md5": "c83141c0b41df02f73d52488e8759ddc"
+  },
+  {
+   "n": 333,
+   "artist": "The Verve",
+   "title": "Bitter Sweet Symphony",
+   "official": false,
+   "md5": "2c32ea27fe46f4c15db5f4110547d1af"
+  },
+  {
+   "n": 334,
+   "artist": "Geese",
+   "title": "3D Country",
+   "official": false,
+   "md5": "4c924fcdd9897f853cbedbe21dc01a4d"
+  },
+  {
+   "n": 335,
+   "artist": "Viagra Boys",
+   "title": "Return To Monke",
+   "official": false,
+   "md5": "88cb923be39eaa05ef09cbcfbeea1dfa"
+  },
+  {
+   "n": 336,
+   "artist": "Jamiroquai",
+   "title": "Canned Heat",
+   "official": false,
+   "md5": "5ac3f07882916388751090b1b28789a9"
+  },
+  {
+   "n": 337,
+   "artist": "Ween",
+   "title": "Ocean Man",
+   "official": false,
+   "md5": "091bd6e7d7b8ab06f2da6361d05a1401"
+  },
+  {
+   "n": 338,
+   "artist": "Gorillaz, Neneh Cherry",
+   "title": "Kids with Guns",
+   "official": false,
+   "md5": "784d86c1542eaa2cfe6dcec8044a5eb7"
+  },
+  {
+   "n": 339,
+   "artist": "Daft Punk, Paul Williams",
+   "title": "Touch",
+   "official": false,
+   "md5": "34fff55fa168c4260508a73307777cc7"
+  },
+  {
+   "n": 340,
+   "artist": "Dire Straits",
+   "title": "Money for Nothing",
+   "official": true,
+   "md5": "d2bea7e6721bea1f98d6f1a217004816"
+  },
+  {
+   "n": 341,
+   "artist": "The Chats",
+   "title": "6L GTR",
+   "official": false,
+   "md5": "f150b1bd9319b2d72ba4220a28527395"
+  },
+  {
+   "n": 342,
+   "artist": "Amyl and The Sniffers",
+   "title": "U Should Not Be Doing That",
+   "official": false,
+   "md5": "8a21de3e510318008ac9a4e0796b2f46"
+  },
+  {
+   "n": 343,
+   "artist": "Modest Mouse",
+   "title": "Float On",
+   "official": true,
+   "md5": "df4ae1440ea1f2ae4144af43f3abee2d"
+  },
+  {
+   "n": 344,
+   "artist": "Wet Leg",
+   "title": "Wet Dream",
+   "official": false,
+   "md5": "2d5c4303fb6da28688e419d7236fcf6c"
+  },
+  {
+   "n": 345,
+   "artist": "Oasis",
+   "title": "Stand By Me",
+   "official": false,
+   "md5": "3f3e412b0068932cb1ecf87fcfeccd2f"
+  },
+  {
+   "n": 346,
+   "artist": "The Human League",
+   "title": "Don't You Want Me",
+   "official": true,
+   "md5": "1faaf2541a511e3329364b4e33f37bf8"
+  },
+  {
+   "n": 347,
+   "artist": "A$AP Rocky",
+   "title": "PUNK ROCKY",
+   "official": false,
+   "md5": "7ccf20da59a0c9500a5d12930a72447f"
+  },
+  {
+   "n": 348,
+   "artist": "DJ Fresh",
+   "title": "Gold Dust",
+   "official": false,
+   "md5": "5436a1b35e3a782cb9c03918d4d09a94"
+  },
+  {
+   "n": 349,
+   "artist": "The Beatles",
+   "title": "Don't Let Me Down",
+   "official": true,
+   "md5": "ccb47f137b72e5599db8b487d8936539"
+  },
+  {
+   "n": 350,
+   "artist": "Michael Jackson",
+   "title": "Rock with You",
+   "official": false,
+   "md5": "2ea47b9a4f4355e0b8dffa5dcafcd839"
+  },
+  {
+   "n": 351,
+   "artist": "Black Country, New Road",
+   "title": "Chaos Space Marine",
+   "official": false,
+   "md5": "d469fdcbe4a3e79f2e6a0a90033c50a7"
+  },
+  {
+   "n": 352,
+   "artist": "Bad Bunny",
+   "title": "Tití Me Preguntó",
+   "official": false,
+   "md5": "d1448eb27a369778287b7dbdfb5b03a3"
+  },
+  {
+   "n": 353,
+   "artist": "Black Eyed Peas",
+   "title": "Meet Me Halfway",
+   "official": false,
+   "md5": "fd2ed1ecbed93920fd8bc08cdfece1ee"
+  },
+  {
+   "n": 354,
+   "artist": "John Wasson",
+   "title": "Caravan",
+   "official": false,
+   "md5": "259105d79e148a712329a2432b32a3ce"
+  },
+  {
+   "n": 355,
+   "artist": "Smokey Robinson",
+   "title": "Cruisin'",
+   "official": false,
+   "md5": "217be0e8ef6e75959e9926ba2739e857"
+  },
+  {
+   "n": 356,
+   "artist": "Queen, David Bowie",
+   "title": "Under Pressure",
+   "official": true,
+   "md5": "4298cd73a75a4f7cac30b19649df30b4"
+  },
+  {
+   "n": 357,
+   "artist": "Himiko Kikuchi",
+   "title": "Look Your Back!",
+   "official": false,
+   "md5": "311b8a71dd1e9f5850b21cf094443b7d"
+  },
+  {
+   "n": 358,
+   "artist": "Aerosmith",
+   "title": "Walk This Way",
+   "official": true,
+   "md5": "1c7bcc09b34b8ce43e5cd8498e8d24dd"
+  },
+  {
+   "n": 359,
+   "artist": "The Turtles",
+   "title": "Happy Together",
+   "official": true,
+   "md5": "282fd73499c4ec38afcd78c6a58a5b0a"
+  },
+  {
+   "n": 360,
+   "artist": "Spin Doctors",
+   "title": "Two Princes",
+   "official": true,
+   "md5": "3b3f76fe6bed6d7ea86a555f200d128d"
+  },
+  {
+   "n": 361,
+   "artist": "Lit",
+   "title": "My Own Worst Enemy",
+   "official": true,
+   "md5": "7a3e6ca6130285713b121891f76f2f75"
+  },
+  {
+   "n": 362,
+   "artist": "The Smashing Pumpkins",
+   "title": "1979",
+   "official": true,
+   "md5": "79f1c077e060f8addb70fa0ad3426109"
+  },
+  {
+   "n": 363,
+   "artist": "Radiohead",
+   "title": "Just",
+   "official": false,
+   "md5": "900a2fd6c13d771d849a26ac9cbedd9f"
+  },
+  {
+   "n": 364,
+   "artist": "Wilco",
+   "title": "Impossible Germany",
+   "official": false,
+   "md5": "063103008a13d9af828932e11ea066a8"
+  },
+  {
+   "n": 365,
+   "artist": "black midi",
+   "title": "Sugar/Tzu",
+   "official": false,
+   "md5": "a2ff8363a7fff72a23c2450ded425288"
+  },
+  {
+   "n": 366,
+   "artist": "black midi",
+   "title": "Welcome to Hell",
+   "official": false,
+   "md5": "4591f164df24218c394be864369cbf3f"
+  },
+  {
+   "n": 367,
+   "artist": "Talking Heads",
+   "title": "Life During Wartime",
+   "official": false,
+   "md5": "2a7d84f7fd292555559da7fc3297b349"
+  },
+  {
+   "n": 368,
+   "artist": "Queen",
+   "title": "You're My Best Friend",
+   "official": true,
+   "md5": "3f2bb52d07a2ad8367e9c3c8a13a999e"
+  },
+  {
+   "n": 369,
+   "artist": "Lynyrd Skynyrd",
+   "title": "Tuesday's Gone",
+   "official": true,
+   "md5": "1a0a48c9a12a1bdda93736b023d4c331"
+  },
+  {
+   "n": 370,
+   "artist": "Eagles",
+   "title": "Take It Easy",
+   "official": false,
+   "md5": "7ae892f84a836e80961dcc3b10f5ca5c"
+  },
+  {
+   "n": 371,
+   "artist": "The Beach Boys",
+   "title": "Good Vibrations",
+   "official": true,
+   "md5": "d053f498b810666bff1dc2d12a96f770"
+  },
+  {
+   "n": 372,
+   "artist": "Steely Dan",
+   "title": "Do It Again",
+   "official": true,
+   "md5": "c5a6da767d0a9c0fc15ef8cacaba562d"
+  },
+  {
+   "n": 373,
+   "artist": "The Beach Boys",
+   "title": "Kokomo",
+   "official": false,
+   "md5": "6557ffc5ecba61176ac0bf6e34cd16f8"
+  },
+  {
+   "n": 374,
+   "artist": "Primus",
+   "title": "John the Fisherman",
+   "official": true,
+   "md5": "0f7eecb400d5526477ed3ae17d0d95f5"
+  },
+  {
+   "n": 375,
+   "artist": "James Brown",
+   "title": "Get Up Offa That Thing",
+   "official": false,
+   "md5": "e2de092a80135c679a9dfcca872f977e"
+  },
+  {
+   "n": 376,
+   "artist": "Frank Sinatra",
+   "title": "Theme From New York, New York",
+   "official": false,
+   "md5": "94b86300cda83870f708e9cd27347fdc"
+  },
+  {
+   "n": 377,
+   "artist": "Blondie",
+   "title": "Call Me",
+   "official": true,
+   "md5": "580bd2d9d57f510ad267a3daae60e7e7"
+  },
+  {
+   "n": 378,
+   "artist": "Butthole Surfers",
+   "title": "Who Was In My Room Last Night?",
+   "official": true,
+   "md5": "fd09a6cca952ff3ac8079bc2911e01c5"
+  },
+  {
+   "n": 379,
+   "artist": "Justice, DVNO",
+   "title": "DVNO",
+   "official": false,
+   "md5": "7ee8823b483467b5d1ca4778c4cba854"
+  },
+  {
+   "n": 380,
+   "artist": "Talking Heads",
+   "title": "Take Me to the River",
+   "official": true,
+   "md5": "012d3df9ca00e7526f887ad9780256a7"
+  },
+  {
+   "n": 381,
+   "artist": "The Beach Boys",
+   "title": "I Just Wasn't Made For These Times",
+   "official": false,
+   "md5": "8687c78cf5b68aa40ab01400d72f28fa"
+  },
+  {
+   "n": 382,
+   "artist": "George Harrison",
+   "title": "Wah-Wah",
+   "official": false,
+   "md5": "3c116355fb98f3bff64f42c1c1b5ae11"
+  },
+  {
+   "n": 383,
+   "artist": "The Beatles",
+   "title": "Rocky Raccoon",
+   "official": false,
+   "md5": "585fc2c709895ec55f23f56585999028"
+  },
+  {
+   "n": 384,
+   "artist": "Talking Heads",
+   "title": "Uh-Oh, Love Comes to Town",
+   "official": false,
+   "md5": "485db2ea18de85f89ebe6bb8f367d57f"
+  },
+  {
+   "n": 385,
+   "artist": "Steely Dan",
+   "title": "Reelin' In The Years",
+   "official": false,
+   "md5": "600d877496a3cd3d9df031751c946cce"
+  },
+  {
+   "n": 386,
+   "artist": "Fatboy Slim",
+   "title": "Weapon of Choice",
+   "official": false,
+   "md5": "3fa07b3616b3819d1b44ad8ec2918bb6"
+  },
+  {
+   "n": 387,
+   "artist": "Beastie Boys",
+   "title": "Intergalactic",
+   "official": false,
+   "md5": "41e9ce7976608c4dbb81b4c886a1d3fc"
+  },
+  {
+   "n": 388,
+   "artist": "Daft Punk",
+   "title": "Giorgio by Moroder",
+   "official": false,
+   "md5": "aa46a240a065fb13329617bf5f8321b6"
+  },
+  {
+   "n": 389,
+   "artist": "Vantage",
+   "title": "50//50",
+   "official": false,
+   "md5": "654e66a6206599b6c1aa9971a79fefdc"
+  },
+  {
+   "n": 390,
+   "artist": "Michael Jackson",
+   "title": "P.Y.T. (Pretty Young Thing)",
+   "official": false,
+   "md5": "9f3c8f74b1a4a13fec5c2d1938651366"
+  },
+  {
+   "n": 391,
+   "artist": "The Jackson 5",
+   "title": "I Want You Back",
+   "official": true,
+   "md5": "6ae2c7face6b41ead8c95acb89c1d4ec"
+  },
+  {
+   "n": 392,
+   "artist": "Michael Jackson",
+   "title": "Man in the Mirror",
+   "official": false,
+   "md5": "ef27965413a9527572e22dbbd3de50aa"
+  },
+  {
+   "n": 393,
+   "artist": "The Jacksons",
+   "title": "Blame It on the Boogie",
+   "official": false,
+   "md5": "54ecbec8c2072a89076a2a4da639e440"
+  },
+  {
+   "n": 394,
+   "artist": "Michael Jackson",
+   "title": "You Rock My World",
+   "official": false,
+   "md5": "66d2a1417a34072b299d68cef143976f"
+  },
+  {
+   "n": 395,
+   "artist": "Sam Cooke",
+   "title": "A Change Is Gonna Come",
+   "official": false,
+   "md5": "8ff4f4f8e160aed4c266013b0d7ffe91"
+  },
+  {
+   "n": 396,
+   "artist": "David Bowie",
+   "title": "\"Heroes\"",
+   "official": true,
+   "md5": "8dfbf7d0ff12fb9d719eecc1c2e84714"
+  },
+  {
+   "n": 397,
+   "artist": "Michael Jackson, Paul McCartney",
+   "title": "The Girl Is Mine",
+   "official": false,
+   "md5": "c5fea70c208446187f5989c6109425a1"
+  },
+  {
+   "n": 398,
+   "artist": "Seal",
+   "title": "Kiss from a Rose",
+   "official": false,
+   "md5": "555c1041a5e66361bc681d5fb859f72b"
+  },
+  {
+   "n": 399,
+   "artist": "Talking Heads",
+   "title": "Psycho Killer",
+   "official": true,
+   "md5": "81eab422ffbc2267e96f09dffa41c5ba"
+  },
+  {
+   "n": 400,
+   "artist": "Vampire Weekend",
+   "title": "The Kids Don't Stand a Chance",
+   "official": true,
+   "md5": "f7a5d88dc03b3074e574de4bdf33143c"
+  },
+  {
+   "n": 401,
+   "artist": "Vampire Weekend, Steve Lacy",
+   "title": "Sunflower",
+   "official": false,
+   "md5": "10349368d8e8492390700211b01bdd18"
+  },
+  {
+   "n": 402,
+   "artist": "Steely Dan",
+   "title": "Midnite Cruiser",
+   "official": false,
+   "md5": "b58a0d120ea9e4ef9d0b49ed3d9cd737"
+  },
+  {
+   "n": 403,
+   "artist": "The Police",
+   "title": "Next To You",
+   "official": true,
+   "md5": "a28c968d892ef19638afbee60834b6d5"
+  },
+  {
+   "n": 404,
+   "artist": "Paul McCartney",
+   "title": "Coming Up",
+   "official": false,
+   "md5": "d417ea978882436a5612dad4b7eded0a"
+  },
+  {
+   "n": 405,
+   "artist": "The Police",
+   "title": "Don't Stand So Close To Me",
+   "official": true,
+   "md5": "71b725132f3eeec1b3c43dda079b88ba"
+  },
+  {
+   "n": 406,
+   "artist": "The Police",
+   "title": "Can't Stand Losing You",
+   "official": true,
+   "md5": "4a9897dd2855b17fa16caf4674c50dd1"
+  },
+  {
+   "n": 407,
+   "artist": "Fontaines D.C.",
+   "title": "Favourite",
+   "official": false,
+   "md5": "eec3fbbca4f49dc8ad854982c6e64f10"
+  },
+  {
+   "n": 408,
+   "artist": "Semisonic",
+   "title": "Closing Time",
+   "official": false,
+   "md5": "d6e6917dd1af2d62c8091f80f4dc57be"
+  },
+  {
+   "n": 409,
+   "artist": "The Police",
+   "title": "Driven To Tears",
+   "official": false,
+   "md5": "ffa2d3f21d16a505728b88c57c3e83dc"
+  },
+  {
+   "n": 410,
+   "artist": "Prince",
+   "title": "When Doves Cry",
+   "official": false,
+   "md5": "ddd013de29f5656b1d4e773bc4c50703"
+  },
+  {
+   "n": 411,
+   "artist": "Justin Timberlake",
+   "title": "Mirrors",
+   "official": false,
+   "md5": "7684799324881a149d2d0eb3169240f7"
+  },
+  {
+   "n": 412,
+   "artist": "Oasis",
+   "title": "She's Electric",
+   "official": false,
+   "md5": "d03b4a1e3262e9ef72b6e2ec9d00936b"
+  },
+  {
+   "n": 413,
+   "artist": "Magdalena Bay",
+   "title": "That's My Floor",
+   "official": false,
+   "md5": "81ccfde1953647de4f7323db49a05a3c"
+  },
+  {
+   "n": 414,
+   "artist": "Oasis",
+   "title": "Morning Glory",
+   "official": false,
+   "md5": "2f204c8298704960c5673f323e854087"
+  },
+  {
+   "n": 415,
+   "artist": "Oasis",
+   "title": "Some Might Say",
+   "official": true,
+   "md5": "b30788bc10cf1161622c955e9efe73ae"
+  },
+  {
+   "n": 416,
+   "artist": "Soundgarden",
+   "title": "Black Hole Sun",
+   "official": true,
+   "md5": "e1cd0a479465c913bfbdc12f77bef5b7"
+  },
+  {
+   "n": 417,
+   "artist": "Duran Duran",
+   "title": "Rio",
+   "official": true,
+   "md5": "70d0d563297b346a0502219eba6e21fe"
+  },
+  {
+   "n": 418,
+   "artist": "Daft Punk",
+   "title": "Aerodynamic",
+   "official": false,
+   "md5": "f90dbdd85aaeab5e5f527838afd5ad7e"
+  },
+  {
+   "n": 419,
+   "artist": "Joost",
+   "title": "Europapa",
+   "official": false,
+   "md5": "74a8c67db5a30e47817b9934b6a561a2"
+  },
+  {
+   "n": 420,
+   "artist": "Oasis",
+   "title": "Fade Away",
+   "official": false,
+   "md5": "30d28b2aa3cc99b7c95c4e428dd7a98d"
+  },
+  {
+   "n": 421,
+   "artist": "Talking Heads",
+   "title": "Girlfriend Is Better",
+   "official": true,
+   "md5": "70a2d7ba0d2993bde969a9b1c5da8688"
+  }
+ ]
+}

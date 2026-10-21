@@ -119,6 +119,21 @@ because Guitar Hero 3 guitars report garbage there. To let it press frets:
 
 ---
 
+## Downloading the songs
+
+`songs/setlist.json` lists the 421 songs from the Spotify playlist
+"This is what I sound like" that have a guitar chart on
+[Chorus Encore](https://www.enchor.us), checked on October 21, 2026.
+
+Double-click **`download-songs.bat`** to download them all in one go. It saves
+each chart as one `.sng` file in `Documents\Clone Hero\Songs\This is what I sound like`
+(it asks for the Songs folder if yours is somewhere else), skips songs that are
+already there, and can be stopped with Ctrl+C and run again later to carry on.
+Expect a few gigabytes in total. When it finishes, rescan your songs in Clone
+Hero's settings.
+
+---
+
 ## Linux setup
 
 Linux works too, using the kernel's Bluetooth stack.
