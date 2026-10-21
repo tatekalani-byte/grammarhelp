@@ -7,12 +7,58 @@ Linux:   /dev/uinput through the `evdev` package.
 from __future__ import annotations
 
 import sys
+import time
 
 from .mapping import PadState
 
 
 class SetupError(Exception):
     """The virtual controller driver is missing or not usable."""
+
+
+REINSTALL_VIGEM = (
+    "  1. Restart the PC. The driver only starts working after a restart.\n"
+    "  2. Still failing? Open Device Manager > System devices and look for\n"
+    "     'Nefarius Virtual Gamepad Emulation Bus'. If it is missing or has a\n"
+    "     yellow warning sign, install the newest ViGEmBus setup from\n"
+    "         https://github.com/nefarius/ViGEmBus/releases\n"
+    "     (right-click it > Run as administrator), then restart again."
+)
+
+VIGEM_PROBLEMS = {
+    "VIGEM_ERROR_BUS_NOT_FOUND": "The ViGEmBus driver is not installed or not running.",
+    "VIGEM_ERROR_NO_FREE_SLOT": (
+        "ViGEmBus has no free controller slots. Another program that makes virtual\n"
+        "controllers (DS4Windows, x360ce, WiitarThing, Parsec, Sunshine...) may be\n"
+        "using them. Close those programs or restart the PC, then try again."),
+    "VIGEM_ERROR_BUS_VERSION_MISMATCH": "The installed ViGEmBus driver version doesn't work with this program.",
+}
+
+
+def vigem_problem(code: str) -> str:
+    problem = VIGEM_PROBLEMS.get(code, "The ViGEmBus driver refused to add a virtual controller.")
+    advice = "" if code == "VIGEM_ERROR_NO_FREE_SLOT" else "\n" + REINSTALL_VIGEM
+    return f"Could not create a virtual Xbox 360 controller.\n{problem}{advice}\n(Error code: {code})"
+
+
+def _target_add_error() -> str:
+    """vgamepad hides why adding a controller failed; ask the driver directly."""
+    try:
+        import vgamepad.win.vigem_client as vcli
+        import vgamepad.win.vigem_commons as vcom
+        from vgamepad.win.virtual_gamepad import VBUS
+
+        target = vcli.vigem_target_x360_alloc()
+        try:
+            code = vcli.vigem_target_add(VBUS.get_busp(), target)
+            if code == vcom.VIGEM_ERRORS.VIGEM_ERROR_NONE:
+                vcli.vigem_target_remove(VBUS.get_busp(), target)
+                return "none on retry"
+            return vcom.VIGEM_ERRORS(code).name
+        finally:
+            vcli.vigem_target_free(target)
+    except Exception as exc:
+        return f"unknown ({exc})"
 
 
 class VigemPad:
@@ -25,15 +71,19 @@ class VigemPad:
                 "    python -m pip install vgamepad\n"
                 "(it also installs the ViGEmBus driver; accept that installer)."
             ) from exc
-        try:
-            self._pad = vgamepad.VX360Gamepad()
         except Exception as exc:
-            raise SetupError(
-                "Could not create a virtual Xbox 360 controller. The ViGEmBus driver is\n"
-                "probably not installed. Get it from\n"
-                "    https://github.com/nefarius/ViGEmBus/releases\n"
-                f"install it, reboot, and try again. (Error: {exc})"
-            ) from exc
+            # vgamepad connects to the driver as soon as it is imported.
+            raise SetupError(vigem_problem(str(exc))) from exc
+        error = None
+        for _ in range(2):  # the first add sometimes times out right after boot
+            try:
+                self._pad = vgamepad.VX360Gamepad()
+                break
+            except Exception as exc:
+                error = exc
+                time.sleep(1)
+        else:
+            raise SetupError(vigem_problem(_target_add_error())) from error
         b = vgamepad.XUSB_BUTTON
         self._buttons = {
             "A": b.XUSB_GAMEPAD_A,

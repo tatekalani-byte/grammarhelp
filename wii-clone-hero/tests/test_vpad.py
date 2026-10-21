@@ -1,3 +1,4 @@
+import enum
 import sys
 import types
 import unittest
@@ -9,9 +10,14 @@ from wiibridge.vpad import SetupError, UinputPad, VigemPad
 GUITAR_STATE = PadState(buttons=frozenset({"A", "LB", "DOWN", "BACK"}), rx=0.5, ry=-1.0, lt=1.0)
 
 
-def fake_vgamepad(fail=False):
-    """Stand-in for the vgamepad package with the same names and button values."""
+def fake_vgamepad(fail_times=0, add_error=0xE0000002):
+    """Stand-in for the vgamepad package with the same names and button values.
+
+    VX360Gamepad() fails `fail_times` times; the driver then reports `add_error`
+    when asked directly why adding a controller failed.
+    """
     module = types.ModuleType("vgamepad")
+    failures = [fail_times]
 
     class XUSB_BUTTON:
         XUSB_GAMEPAD_DPAD_UP = 0x0001
@@ -32,8 +38,9 @@ def fake_vgamepad(fail=False):
 
     class VX360Gamepad:
         def __init__(self):
-            if fail:
-                raise Exception("VIGEM_ERROR_BUS_NOT_FOUND")
+            if failures[0]:
+                failures[0] -= 1
+                raise AssertionError("The virtual device could not connect to ViGEmBus.")
             self.buttons = 0
             self.sent = []
 
@@ -60,12 +67,35 @@ def fake_vgamepad(fail=False):
 
     module.XUSB_BUTTON = XUSB_BUTTON
     module.VX360Gamepad = VX360Gamepad
-    return module
+
+    class VIGEM_ERRORS(enum.IntEnum):
+        VIGEM_ERROR_NONE = 0x20000000
+        VIGEM_ERROR_BUS_NOT_FOUND = 0xE0000001
+        VIGEM_ERROR_NO_FREE_SLOT = 0xE0000002
+        VIGEM_ERROR_BUS_ACCESS_FAILED = 0xE0000009
+
+    win = types.ModuleType("vgamepad.win")
+    commons = types.ModuleType("vgamepad.win.vigem_commons")
+    commons.VIGEM_ERRORS = VIGEM_ERRORS
+    client = types.ModuleType("vgamepad.win.vigem_client")
+    client.vigem_target_x360_alloc = lambda: object()
+    client.vigem_target_add = lambda bus, target: add_error
+    client.vigem_target_remove = lambda bus, target: 0
+    client.vigem_target_free = lambda target: None
+    virtual = types.ModuleType("vgamepad.win.virtual_gamepad")
+    virtual.VBUS = types.SimpleNamespace(get_busp=lambda: object())
+    module.win = win
+    win.vigem_client, win.vigem_commons, win.virtual_gamepad = client, commons, virtual
+    return {
+        "vgamepad": module, "vgamepad.win": win, "vgamepad.win.vigem_client": client,
+        "vgamepad.win.vigem_commons": commons, "vgamepad.win.virtual_gamepad": virtual,
+    }
 
 
+@mock.patch("wiibridge.vpad.time.sleep", lambda seconds: None)
 class VigemPadTests(unittest.TestCase):
     def test_state_is_sent_as_one_xinput_report(self):
-        with mock.patch.dict(sys.modules, {"vgamepad": fake_vgamepad()}):
+        with mock.patch.dict(sys.modules, fake_vgamepad()):
             pad = VigemPad()
             gamepad = pad._pad
             pad.update(GUITAR_STATE)
@@ -73,11 +103,38 @@ class VigemPadTests(unittest.TestCase):
         self.assertEqual(gamepad.sent[0], (0x1000 | 0x0100 | 0x0002 | 0x0020, (0.0, 0.0), (0.5, -1.0), 1.0, 0.0))
         self.assertEqual(gamepad.sent[1], (0, (0.0, 0.0), (0.0, 0.0), 0.0, 0.0))
 
-    def test_missing_driver_gives_a_helpful_error(self):
-        with mock.patch.dict(sys.modules, {"vgamepad": fake_vgamepad(fail=True)}):
+    def test_a_single_failed_add_is_retried(self):
+        with mock.patch.dict(sys.modules, fake_vgamepad(fail_times=1)):
+            VigemPad()
+
+    def test_failed_add_reports_the_drivers_reason(self):
+        with mock.patch.dict(sys.modules, fake_vgamepad(fail_times=2, add_error=0xE0000002)):
             with self.assertRaises(SetupError) as raised:
                 VigemPad()
-        self.assertIn("ViGEmBus", str(raised.exception))
+        message = str(raised.exception)
+        self.assertIn("no free controller slots", message)
+        self.assertIn("VIGEM_ERROR_NO_FREE_SLOT", message)
+
+    def test_broken_driver_suggests_restart_and_reinstall(self):
+        with mock.patch.dict(sys.modules, fake_vgamepad(fail_times=2, add_error=0xE0000009)):
+            with self.assertRaises(SetupError) as raised:
+                VigemPad()
+        message = str(raised.exception)
+        self.assertIn("Restart the PC", message)
+        self.assertIn("github.com/nefarius/ViGEmBus/releases", message)
+
+    def test_driver_missing_at_import(self):
+        real_import = __import__
+
+        def failing_import(name, *args, **kwargs):
+            if name == "vgamepad":
+                raise Exception("VIGEM_ERROR_BUS_NOT_FOUND")
+            return real_import(name, *args, **kwargs)
+
+        with mock.patch("builtins.__import__", failing_import):
+            with self.assertRaises(SetupError) as raised:
+                VigemPad()
+        self.assertIn("not installed or not running", str(raised.exception))
 
 
 try:
